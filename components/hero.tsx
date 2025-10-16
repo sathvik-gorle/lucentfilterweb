@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { motion } from "framer-motion"
 import { Droplet } from "lucide-react"
+import { HeroStats } from "@/components/hero-stats"
 
 export function Hero() {
   return (
@@ -22,122 +23,80 @@ export function Hero() {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-32 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left content */}
+      <div className="container mx-auto px-4 py-16 md:py-20 lg:py-24 relative z-10">
+        {/* Main Hero Content */}
+        <div className="text-center space-y-8 max-w-5xl mx-auto">
           <motion.div
-            className="space-y-8"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex justify-center"
           >
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+            <Badge
+              variant="secondary"
+              className="px-5 py-2.5 text-sm font-semibold gap-2 bg-accent/10 text-accent border border-accent/20 hover:bg-accent/20 transition-colors"
             >
-              <Badge
-                variant="secondary"
-                className="px-4 py-2 text-sm font-medium gap-2 bg-accent/10 text-accent border-accent/20"
-              >
-                <Droplet className="w-4 h-4" />
-                Advanced Ion-Exchange Technology
-              </Badge>
-            </motion.div>
-
-            <div className="space-y-6">
-              <motion.h1
-                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-balance"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
-                PFAS-free water, <span className="gradient-text">verified.</span>
-              </motion.h1>
-              <motion.p
-                className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-              >
-                Lucent uses next-gen ion-exchange resin to capture "forever chemicals" and deliver clean, great-tasting
-                water for home and small offices.
-              </motion.p>
-            </div>
-
-            <motion.div
-              className="flex flex-wrap gap-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              <Button
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg shadow-accent/20 hover:shadow-xl hover:shadow-accent/30 transition-all"
-                asChild
-              >
-                <a href="#demo">Watch Demo</a>
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 hover:bg-accent/5 bg-transparent" asChild>
-                <a href="#tech">See the Science</a>
-              </Button>
-            </motion.div>
-
-            {/* Trust badges */}
-            <motion.div
-              className="flex flex-wrap items-center gap-3 pt-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-secondary/50">
-                NSF/ANSI 53/58 Ready
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-secondary/50">
-                Lab-Tested
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-secondary/50">
-                BPA-Free
-              </Badge>
-            </motion.div>
-
-            <motion.div
-              className="pt-4 space-y-2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <p className="text-sm text-muted-foreground">
-                Est. removal of PFOA/PFOS: <span className="font-bold text-foreground text-lg">95-99%*</span>
-              </p>
-              <a href="#lab-results" className="text-sm text-accent hover:underline inline-flex items-center gap-1">
-                View lab data →
-              </a>
-            </motion.div>
+              <Droplet className="w-4 h-4" />
+              Advanced Ion-Exchange Technology
+            </Badge>
           </motion.div>
 
-          <motion.div
-            className="relative flex items-center justify-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-          >
-            <div className="relative w-full max-w-lg">
-              {/* Glow effect behind product */}
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 blur-3xl rounded-full scale-75" />
+          <div className="space-y-6">
+            <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-balance"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              PFAS & nitrate removal with <span className="gradient-text">UV disinfection.</span> Verified.
+            </motion.h1>
+            <motion.p
+              className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Regenerable ion-exchange + UV-C in a modular, 3D-printed cartridge—engineered for rural wells.
+            </motion.p>
+          </div>
 
-              <motion.div
-                className="relative"
-                animate={{ y: [0, -15, 0] }}
-                transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-              >
-                <img
-                  src="/modern-sleek-water-filter-product-white-background.jpg"
-                  alt="Lucent Water Filter Product"
-                  className="w-full h-full object-contain drop-shadow-2xl relative z-10"
-                />
-              </motion.div>
-            </div>
+          <motion.div
+            className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <Button
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg shadow-accent/20 hover:shadow-xl hover:shadow-accent/30 transition-all h-14 px-8 text-base font-semibold"
+              asChild
+            >
+              <a href="#demo">Watch Demo</a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-2 hover:bg-accent/5 bg-background/50 backdrop-blur h-14 px-8 text-base font-semibold" asChild>
+              <a href="#tech">See the Science</a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-2 hover:bg-accent/5 bg-background/50 backdrop-blur h-14 px-8 text-base font-semibold" asChild>
+              <a href="#lab-results">View Lab Data</a>
+            </Button>
+          </motion.div>
+
+          {/* Trust badges */}
+          <motion.div
+            className="flex flex-wrap items-center justify-center gap-3 pt-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <Badge variant="secondary" className="px-4 py-2.5 text-sm font-medium bg-secondary/50 hover:bg-secondary/70 transition-colors">
+              NSF/ANSI 53/58 Ready
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-2.5 text-sm font-medium bg-secondary/50 hover:bg-secondary/70 transition-colors">
+              Lab-Tested
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-2.5 text-sm font-medium bg-secondary/50 hover:bg-secondary/70 transition-colors">
+              BPA-Free
+            </Badge>
           </motion.div>
         </div>
       </div>

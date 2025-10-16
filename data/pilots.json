@@ -1,0 +1,27 @@
+{
+  "pilots": [
+    {
+      "id": "narok-ke",
+      "location": "Narok, Kenya",
+      "partner": "Asante African Foundation",
+      "coords": [-1.085, 35.871],
+      "startDate": "2025-08-01",
+      "households": null,
+      "litersFiltered": null,
+      "notes": "After two weeks of using Lucent, 'clean water has never been more accessible – the filters are cheap and easy to use, making it perfect for our village.'",
+      "images": ["/placeholder.jpg"]
+    },
+    {
+      "id": "cuh-in",
+      "location": "Central University of Haryana, India",
+      "partner": "Environmental Science Dept.",
+      "coords": [28.315, 76.564],
+      "startDate": "2025-09-01",
+      "households": null,
+      "litersFiltered": null,
+      "notes": "Academic collaboration focused on performance sampling, usability testing in rural settings, and validation of regeneration protocols.",
+      "images": ["/placeholder.jpg"]
+    }
+  ]
+}
+

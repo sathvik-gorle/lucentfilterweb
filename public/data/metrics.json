@@ -1,0 +1,41 @@
+{
+  "global": {
+    "householdsServed": 8,
+    "litersFiltered": 12500,
+    "avgNitrateReductionPct": 89,
+    "avgPfasReductionPct": 93,
+    "uvDoseMjCm2": 40,
+    "uptimePct": 96,
+    "lastUpdated": "2025-01-15"
+  },
+  "sites": [
+    {
+      "id": "narok-ke",
+      "label": "Narok, Kenya",
+      "householdsServed": 5,
+      "litersFiltered": 7800,
+      "nitrateInMgL": 18.5,
+      "nitrateOutMgL": 2.1,
+      "pfosInPpt": 45,
+      "pfosOutPpt": 3,
+      "pfoaInPpt": 38,
+      "pfoaOutPpt": 2.5,
+      "uvDoseMjCm2": 40,
+      "uptimePct": 95
+    },
+    {
+      "id": "cuh-in",
+      "label": "CU Haryana, India",
+      "householdsServed": 3,
+      "litersFiltered": 4700,
+      "nitrateInMgL": 22.3,
+      "nitrateOutMgL": 2.8,
+      "pfosInPpt": 52,
+      "pfosOutPpt": 3.5,
+      "pfoaInPpt": 41,
+      "pfoaOutPpt": 2.9,
+      "uvDoseMjCm2": 40,
+      "uptimePct": 97
+    }
+  ]
+}

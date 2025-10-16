@@ -1,14 +1,12 @@
 import { Hero } from "@/components/hero"
-import { SocialProof } from "@/components/social-proof"
-import { ProductHighlights } from "@/components/product-highlights"
 import { DemoVideo } from "@/components/demo-video"
-import { TechnicalDeepDive } from "@/components/technical-deep-dive"
-import { EffectivenessStats } from "@/components/effectiveness-stats"
-import { TestimonialCarousel } from "@/components/testimonial-carousel"
 import { ComparisonTable } from "@/components/comparison-table"
 import { FAQ } from "@/components/faq"
 import { Footer } from "@/components/footer"
 import { Navigation } from "@/components/navigation"
+import { LucentSolutionSection } from "@/components/content-sections/lucent-solution"
+import { HeroStats } from "@/components/hero-stats"
+import { PilotMap } from "@/components/pilot-map"
 
 export default function Home() {
   return (
@@ -16,11 +14,13 @@ export default function Home() {
       <Navigation />
       <Hero />
       <DemoVideo />
-      <TestimonialCarousel />
-      <SocialProof />
-      <ProductHighlights />
-      <TechnicalDeepDive />
-      <EffectivenessStats />
+      <section className="py-12 md:py-14 bg-muted/10">
+        <div className="container mx-auto px-4">
+          <HeroStats />
+        </div>
+      </section>
+      <PilotMap />
+      <LucentSolutionSection />
       <ComparisonTable />
       <FAQ />
       <Footer />

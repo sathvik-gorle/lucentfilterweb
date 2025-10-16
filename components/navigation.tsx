@@ -34,10 +34,7 @@ export function Navigation() {
             Demo
           </a>
           <a href="#tech" className="text-sm font-medium hover:text-accent transition-colors">
-            Technology
-          </a>
-          <a href="#testimonials" className="text-sm font-medium hover:text-accent transition-colors">
-            Testimonials
+            Science
           </a>
           <a href="#faq" className="text-sm font-medium hover:text-accent transition-colors">
             FAQ
@@ -50,7 +47,7 @@ export function Navigation() {
           className="border-2 hover:bg-accent/5 hover:border-accent/50 transition-all bg-transparent"
           asChild
         >
-          <a href="#lab-results">Lab Results</a>
+          <a href="/whitepaper">Whitepaper</a>
         </Button>
       </div>
     </nav>
