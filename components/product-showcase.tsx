@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { motion, AnimatePresence } from "framer-motion"
 import { Image as ImageIcon, X, ChevronLeft, ChevronRight, Expand } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export function ProductShowcase() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -53,6 +53,22 @@ export function ProductShowcase() {
   const goToImage = (index: number) => {
     setCurrentIndex(index)
   }
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        setCurrentIndex((prev) => (prev - 1 + productImages.length) % productImages.length)
+      } else if (e.key === 'ArrowRight') {
+        setCurrentIndex((prev) => (prev + 1) % productImages.length)
+      } else if (e.key === 'Escape' && isFullscreen) {
+        setIsFullscreen(false)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [isFullscreen, productImages.length])
 
   return (
     <>
@@ -293,17 +309,3 @@ export function ProductShowcase() {
     </>
   )
 }
-
-// Add keyboard navigation
-if (typeof window !== 'undefined') {
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-      document.querySelector('[aria-label="Previous image"]')?.dispatchEvent(new Event('click'))
-    } else if (e.key === 'ArrowRight') {
-      document.querySelector('[aria-label="Next image"]')?.dispatchEvent(new Event('click'))
-    } else if (e.key === 'Escape') {
-      document.querySelector('[aria-label="Close"]')?.dispatchEvent(new Event('click'))
-    }
-  })
-}
-
