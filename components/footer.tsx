@@ -48,26 +48,26 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#lab-results"
+                    href="#product-gallery"
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
-                    Lab Results
+                    Product Gallery
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#tech"
+                    href="#demo"
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
-                    Performance Data
+                    Demo Videos
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#tech"
+                    href="/whitepaper"
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
-                    Certifications
+                    Whitepaper
                   </a>
                 </li>
               </ul>
@@ -83,18 +83,13 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                    Installation Guide
+                  <a href="#tech" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    How It Works
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                    Warranty Info
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                    Contact
+                  <a href="/whitepaper" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Documentation
                   </a>
                 </li>
               </ul>
@@ -124,14 +119,9 @@ export function Footer() {
 
           {/* Bottom bar */}
           <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-            <p>© 2025 Lucent Water Systems. Educational project demonstration.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-primary-foreground transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">
-                Terms of Service
-              </a>
+            <p>© {new Date().getFullYear()} Lucent Water Systems. Educational project demonstration.</p>
+            <div className="text-primary-foreground/60">
+              Made with Next.js and Tailwind CSS
             </div>
           </div>
         </div>

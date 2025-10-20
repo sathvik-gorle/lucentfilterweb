@@ -376,3 +376,47 @@
   outline-offset: 2px;
   box-shadow: 0 0 0 4px hsl(var(--accent) / 0.2);
 }
+
+/* Product image background removal effect */
+@keyframes rotate3d {
+  0% {
+    transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+  }
+  33% {
+    transform: perspective(1000px) rotateY(5deg) rotateZ(2deg);
+  }
+  66% {
+    transform: perspective(1000px) rotateY(-5deg) rotateZ(-2deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.animate-rotate-3d {
+  animation: rotate3d 8s ease-in-out infinite;
+}
+
+/* Image hover zoom effect */
+.hover-zoom {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glass-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}

@@ -83,7 +83,7 @@ export function EffectivenessStats() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             *Test methodology: EPA Method 537.1, synthetic challenge water, 0.5 GPM flow rate.{" "}
-            <a href="#lab-results" className="underline hover:text-primary-foreground transition-colors font-medium">
+            <a href="#tech" className="underline hover:text-primary-foreground transition-colors font-medium">
               View detailed lab results
             </a>
           </motion.p>

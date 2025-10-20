@@ -7,6 +7,7 @@ import { Navigation } from "@/components/navigation"
 import { LucentSolutionSection } from "@/components/content-sections/lucent-solution"
 import { HeroStats } from "@/components/hero-stats"
 import { PilotMap } from "@/components/pilot-map"
+import { ProductShowcase } from "@/components/product-showcase"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <HeroStats />
         </div>
       </section>
+      <ProductShowcase />
       <PilotMap />
       <LucentSolutionSection />
       <ComparisonTable />
