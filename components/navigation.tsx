@@ -22,21 +22,24 @@ export function Navigation() {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-lg shadow-accent/20">
             <Droplet className="w-5 h-5 text-white fill-white" />
           </div>
           <span className="font-bold text-2xl gradient-text">Lucent</span>
-        </div>
+        </a>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#demo" className="text-sm font-medium hover:text-accent transition-colors">
+          <a href="/" className="text-sm font-medium hover:text-accent transition-colors">
+            Home
+          </a>
+          <a href="/#demo" className="text-sm font-medium hover:text-accent transition-colors">
             Demo
           </a>
-          <a href="#tech" className="text-sm font-medium hover:text-accent transition-colors">
+          <a href="/#tech" className="text-sm font-medium hover:text-accent transition-colors">
             Science
           </a>
-          <a href="#faq" className="text-sm font-medium hover:text-accent transition-colors">
+          <a href="/#faq" className="text-sm font-medium hover:text-accent transition-colors">
             FAQ
           </a>
         </div>
