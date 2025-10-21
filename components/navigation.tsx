@@ -44,10 +44,10 @@ export function Navigation() {
         <Button
           variant="outline"
           size="sm"
-          className="border-2 hover:bg-accent/5 hover:border-accent/50 transition-all bg-transparent"
+          className="border-2 hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all bg-transparent font-medium"
           asChild
         >
-          <a href="/whitepaper">Whitepaper</a>
+          <a href="/whitepaper">Technical Documentation</a>
         </Button>
       </div>
     </nav>

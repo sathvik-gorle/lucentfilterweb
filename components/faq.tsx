@@ -6,12 +6,12 @@ export function FAQ() {
     {
       question: "Does Lucent remove PFAS from water?",
       answer:
-        "Yes. Laboratory testing shows Lucent removes 95-99% of PFOA and PFOS under standard test conditions (200-300 ng/L inlet concentration, 0.5 GPM flow rate, pH 7.5). The ion-exchange resin is specifically designed to capture forever chemicals through high-affinity functional groups. See our lab results for detailed performance data.",
+        "Yes. Laboratory testing shows Lucent removes 90-99% of PFOA and PFOS under standard test conditions (200-300 ng/L inlet concentration, 0.5 GPM flow rate, pH 7.5). The ion-exchange resin is specifically designed to capture forever chemicals through high-affinity functional groups.",
     },
     {
       question: "How does ion-exchange compare to activated carbon for PFAS removal?",
       answer:
-        "Ion-exchange resin is significantly more effective than standard activated carbon for PFAS removal. While carbon relies primarily on physical adsorption, ion-exchange creates strong electrostatic bonds with PFAS molecules. This results in higher removal rates (95-99% vs. 50-70%) and longer filter life before breakthrough occurs.",
+        "Ion-exchange resin is significantly more effective than standard activated carbon for PFAS removal. While carbon relies primarily on physical adsorption, ion-exchange creates strong electrostatic bonds with PFAS molecules. This results in higher removal rates (90-99% vs. 50-70%) and longer filter life before breakthrough occurs.",
     },
     {
       question: "How long does a cartridge last?",
@@ -46,19 +46,19 @@ export function FAQ() {
   ]
 
   return (
-    <section id="faq" className="py-20 scroll-mt-20">
+    <section id="faq" className="py-20 md:py-24 bg-muted/10 scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Frequently Asked Questions</h2>
-          <p className="text-center text-muted-foreground mb-12">Technical answers to common questions about Lucent</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">Frequently Asked Questions</h2>
+          <p className="text-center text-lg text-muted-foreground mb-12">Technical answers to common questions about Lucent filtration</p>
 
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+              <AccordionItem key={index} value={`item-${index}`} className="border-2 rounded-xl px-6 py-2 bg-card shadow-sm hover:shadow-md transition-shadow">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline text-base md:text-lg py-4">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">{faq.answer}</AccordionContent>
+                <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base pb-4">{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

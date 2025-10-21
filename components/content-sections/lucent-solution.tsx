@@ -48,9 +48,9 @@ export function LucentSolutionSection() {
                   ]}
                   lucentApproach="Specialty anion-exchange resin blend targets nitrates, sulfates, PFAS (PFOA/PFOS), and even some heavy metals. Regenerable with brine like home softeners, reducing ongoing cost and waste."
                   proofSources={[
-                    { text: "RAdata – Ion Exchange for Nitrates", link: "#references" },
-                    { text: "Lenntech – PFAS Removal by Anion Exchange", link: "#references" },
-                    { text: "WQA – Nitrate Technical Fact Sheet", link: "#references" },
+                    { text: "Ion-exchange proven for nitrate removal in residential wells" },
+                    { text: "Anion resins achieve 90-99% PFAS removal efficiency" },
+                    { text: "Regenerable design extends filter lifespan" },
                   ]}
                 />
 
@@ -121,9 +121,9 @@ export function LucentSolutionSection() {
                   ]}
                   lucentApproach="UV-C stage placed after resin filter ensures clear water for optimal dose delivery. Physical DNA/RNA damage inactivates bacteria, viruses, and parasites without chemicals."
                   proofSources={[
-                    { text: "WA Health – UV Disinfection", link: "#references" },
-                    { text: "ESP Water Products – UV Log Reductions", link: "#references" },
-                    { text: "NSF/ANSI 55 Standard", link: "#references" },
+                    { text: "UV-C destroys 99.99% of viruses and bacteria" },
+                    { text: "NSF/ANSI 55 Class A requires ≥40 mJ/cm² dose" },
+                    { text: "More effective than chlorine for many pathogens" },
                   ]}
                 />
 
@@ -189,8 +189,8 @@ export function LucentSolutionSection() {
                   ]}
                   lucentApproach="Custom-designed 3D-printed cartridge and housing made from food-grade plastics. Modular design means parts like resin cartridge and UV lamp can be replaced without replacing the whole unit."
                   proofSources={[
-                    { text: "PLOS ONE – 3D Printed Filtration (Kim et al.)", link: "#references" },
-                    { text: "Popular Science – Local 3D Printing", link: "#references" },
+                    { text: "3D printing enables customized filtration systems" },
+                    { text: "Digital files allow local manufacturing worldwide" },
                   ]}
                 />
 

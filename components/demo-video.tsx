@@ -14,8 +14,8 @@ export function DemoVideo() {
       duration: "4:32",
     },
     {
-      title: "Customer Testimonial - Kenya",
-      description: "Real results from our Narok deployment",
+      title: "Partner Testimonial",
+      description: "Real-world impact from our community deployments",
       thumbnail: "/man-testimonial-video-happy-customer.jpg",
       duration: "2:15",
     },
@@ -51,7 +51,7 @@ export function DemoVideo() {
             See Lucent in Action
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Watch technical demonstrations, customer testimonials, and expert analysis
+            Technical demonstrations, partner testimonials, and expert analysis
           </p>
         </motion.div>
 

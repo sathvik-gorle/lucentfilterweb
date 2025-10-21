@@ -13,7 +13,7 @@ export function ComparisonTable() {
           <SectionHeader
             badge="Competitive Analysis"
             title="How Lucent Compares"
-            description="Comprehensive comparison of well water treatment methods—chemicals, microbes, cost, and sustainability"
+            description="Comprehensive comparison of water treatment methods across contaminant removal, cost, and sustainability"
           />
 
           <motion.div

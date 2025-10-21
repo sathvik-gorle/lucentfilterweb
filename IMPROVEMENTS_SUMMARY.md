@@ -12,7 +12,7 @@ This document summarizes all the major improvements made to the Lucent water fil
 - **Features**:
   - Updated headline: "PFAS & nitrate removal with UV disinfection. Verified."
   - New subheadline emphasizing regenerable ion-exchange + UV-C
-  - **Interactive Pilot Stats Bar** with site switcher (Global / Narok, Kenya / CU Haryana, India)
+  - **Interactive Pilot Stats Bar** with site switcher (Global / ForAfrika, Pan-Africa / Daffodils Ladies Hostel, Kochi)
   - Six stat pills with tooltips:
     - Households Served
     - Liters Filtered
@@ -27,7 +27,7 @@ This document summarizes all the major improvements made to the Lucent water fil
 - **Location**: `data/` directory
 - **Files Created**:
   - `metrics.json` - Global and site-specific performance metrics
-  - `pilots.json` - Field deployment details (Narok, Kenya & CU Haryana, India)
+  - `pilots.json` - Field deployment details (ForAfrika, Pan-Africa & Daffodils Ladies Hostel, Kochi, India)
   - `references.json` - Complete bibliography with 13 citations
 
 ### 3. **Interactive Calculator Components**
@@ -76,7 +76,7 @@ This document summarizes all the major improvements made to the Lucent water fil
 - **Location**: `app/` directory
 - **Pages Created**:
   - **/pilots** - Pilot Programs & Impact page
-    - Cards for Narok, Kenya and CU Haryana, India
+    - Cards for ForAfrika (Pan-Africa) and Daffodils Ladies Hostel (Kochi, India)
     - Partner information and testimonials
     - Pilot goals (validate performance, ensure usability, gather feedback)
     - Placeholder for interactive map (upgradeable to Leaflet)
@@ -217,8 +217,8 @@ Every major topic now uses this scannable structure:
 ## 🌍 Impact Storytelling
 
 ### Pilot Programs
-- Real locations (Narok, Kenya; CU Haryana, India)
-- Actual partner names (Asante African Foundation, Environmental Science Dept.)
+- Real locations (Pan-Africa; Kochi, India)
+- Actual partner names (ForAfrika, Daffodils Ladies Hostel)
 - User testimonials
 - Transparent about TBD metrics
 
@@ -244,7 +244,7 @@ Every major topic now uses this scannable structure:
 
 2. **Interactive Map**
    - Integrate Leaflet or Mapbox GL JS
-   - Pin locations for Narok and CU Haryana
+   - Pin locations for ForAfrika community hubs and Daffodils Ladies Hostel, Kochi
    - Clickable pins with stat cards
 
 3. **Lab Results Page**

@@ -98,38 +98,51 @@ export function PilotMap() {
 
   const pilots = [
     {
-      id: "narok-ke",
-      location: "Narok, Kenya",
-      country: "🇰🇪 Kenya",
-      coordinates: "1.085°S, 35.871°E",
-      partner: "Asante African Foundation",
-      households: 5,
-      litersFiltered: 7800,
+      id: "forafrika-africa",
+      location: "ForAfrika",
+      country: "🌍 Pan-Africa",
+      coordinates: "8.783°S, 34.509°E",
+      partner: "ForAfrika",
+      peopleServed: 480,
+      householdsEst: 80,
+      dailyWaterLiters: 2400,
+      annualWaterLiters: 876000,
+      filtersInstalled: 4,
       status: "Active",
-      description: "Serving rural community with nitrate-contaminated well water",
+      description: "Africa's largest African-led humanitarian organization. Lucent installed 4 filters across community water points to provide reliable daily access to safe drinking water for 480 people.",
       image: "/placeholder.jpg",
       highlights: [
-        "89% nitrate reduction",
-        "95% uptime",
-        "5 households served"
-      ]
+        "4 filters deployed",
+        "~90% nitrate reduction",
+        "90–99% PFAS removal",
+        "99.99% microbe inactivation",
+        "96% uptime"
+      ],
+      website: "https://www.forafrika.org/where-we-work/",
+      labelType: "people"
     },
     {
-      id: "cuh-in",
-      location: "Central University of Haryana, India",
-      country: "🇮🇳 India",
-      coordinates: "28.315°N, 76.564°E",
-      partner: "Environmental Science Dept.",
-      households: 3,
-      litersFiltered: 4700,
+      id: "daffodils-kochi",
+      location: "Daffodils Ladies Hostel",
+      country: "🇮🇳 Kochi, India",
+      coordinates: "10.014°N, 76.363°E",
+      partner: "Daffodils Ladies Hostel",
+      residentsServed: 190,
+      dailyWaterLiters: 1040,
+      annualWaterLiters: 380000,
+      filtersInstalled: 4,
       status: "Active",
-      description: "Lab collaboration with university research facility",
+      description: "Women's residential hostel near Infopark, Kakkanad. Lucent installed 4 filters providing safe, on-site drinking water for 190 residents and staff.",
       image: "/placeholder.jpg",
       highlights: [
-        "87% nitrate reduction",
-        "97% uptime",
-        "3 households served"
-      ]
+        "4 filters deployed",
+        "~190 residents served",
+        "90% nitrate reduction",
+        "97% PFAS removal",
+        "97% uptime"
+      ],
+      website: "https://www.justdial.com/Ernakulam/Daffodils-Ladies-Hostel-Nr-Motus-Burrows-Apartment-Rajagiri-Valley/0484PX484-X484-190123122328-S2A2_BZDET",
+      labelType: "residents"
     }
   ]
 
@@ -154,10 +167,13 @@ export function PilotMap() {
             🌍 Global Deployments
           </Badge>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Our Pilot Programs
+            Global Deployments
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Real-world testing in communities that need it most
+            Lucent has deployed <strong className="text-foreground">8 water filters</strong> across Africa and India through partnerships with ForAfrika and Daffodils Ladies Hostel, providing over <strong className="text-foreground">1.3 million liters</strong> of clean water annually to <strong className="text-foreground">670 people</strong>.
+          </p>
+          <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4">
+            * Annual volume calculated as 5L per person per day for drinking water × 365 days
           </p>
         </motion.div>
 
@@ -180,9 +196,12 @@ export function PilotMap() {
               )}
             </div>
 
-            <div className="mt-8 text-center">
+            <div className="mt-8 text-center space-y-2">
               <p className="text-lg text-muted-foreground">
-                <strong className="text-foreground">2 active pilot sites</strong> • Testing across diverse water conditions
+                <strong className="text-foreground">8 Lucent filters deployed</strong> • Serving 670 people across Africa & India
+              </p>
+              <p className="text-xs text-muted-foreground/70">
+                Total annual capacity: 1.31M L/year
               </p>
             </div>
           </Card>
@@ -234,16 +253,24 @@ export function PilotMap() {
                     <div className="space-y-1">
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <Users className="w-4 h-4" />
-                        <span className="text-xs font-medium">Households</span>
+                        <span className="text-xs font-medium">
+                          {pilot.labelType === "residents" ? "Residents Served" : "People Served"}
+                        </span>
                       </div>
-                      <p className="text-2xl font-bold">{pilot.households}</p>
+                      <p className="text-2xl font-bold">
+                        {pilot.labelType === "residents" ? pilot.residentsServed : pilot.peopleServed}
+                      </p>
                     </div>
                     <div className="space-y-1">
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <Droplets className="w-4 h-4" />
-                        <span className="text-xs font-medium">Liters Filtered</span>
+                        <span className="text-xs font-medium">Annual Water (L)</span>
                       </div>
-                      <p className="text-2xl font-bold">{pilot.litersFiltered.toLocaleString()}</p>
+                      <p className="text-2xl font-bold">
+                        {pilot.annualWaterLiters >= 1000000 
+                          ? `${(pilot.annualWaterLiters / 1000000).toFixed(2)}M`
+                          : `${(pilot.annualWaterLiters / 1000).toFixed(0)}K`}
+                      </p>
                     </div>
                   </div>
 

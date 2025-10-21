@@ -30,7 +30,7 @@ export function Footer() {
                 <span className="font-bold text-xl">Lucent</span>
               </div>
               <p className="text-sm text-primary-foreground/80 leading-relaxed">
-                Advanced ion-exchange filtration for PFAS-free water.
+                Advanced ion-exchange + UV-C filtration for safe, clean water.
               </p>
             </div>
 
@@ -97,9 +97,9 @@ export function Footer() {
 
             {/* Newsletter */}
             <div>
-              <h3 className="font-semibold mb-4">Stay Updated</h3>
+              <h3 className="font-semibold mb-4">Stay Informed</h3>
               <p className="text-sm text-primary-foreground/80 mb-4">
-                Get technical updates and water quality insights.
+                Technical updates and water quality insights.
               </p>
               <form onSubmit={handleSubmit} className="space-y-2">
                 <Input
@@ -118,10 +118,15 @@ export function Footer() {
           </div>
 
           {/* Bottom bar */}
-          <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-            <p>© {new Date().getFullYear()} Lucent Water Systems. Educational project demonstration.</p>
-            <div className="text-primary-foreground/60">
-              Made with Next.js and Tailwind CSS
+          <div className="pt-8 border-t border-primary-foreground/20 space-y-3">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
+              <p>© {new Date().getFullYear()} Lucent Water Systems. Educational project demonstration.</p>
+              <div className="text-primary-foreground/60">
+                Made with Next.js and Tailwind CSS
+              </div>
+            </div>
+            <div className="text-center text-sm text-primary-foreground/50 pt-2">
+              <p className="font-medium">Created by Sathvik Gorle, Arjun Rawal, and Hadi Abdul</p>
             </div>
           </div>
         </div>

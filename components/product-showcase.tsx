@@ -92,11 +92,11 @@ export function ProductShowcase() {
                 <ImageIcon className="w-4 h-4" />
                 Product Gallery
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-3">
-                See The Hardware
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
+                The Hardware
               </h2>
               <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-                Explore our water filtration system in detail
+                Explore our modular, 3D-printed water filtration system
               </p>
             </motion.div>
 

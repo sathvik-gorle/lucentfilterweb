@@ -105,9 +105,9 @@ export function CurrentSolutionsSection() {
               ]}
               lucentApproach="Single device with ion-exchange for chemicals + UV for microbes, no reject water, regenerable media, and simple installation."
               proofSources={[
-                { text: "RAdata – Nitrates in Your Water", link: "#references" },
-                { text: "Guardian – PFAS in Wells", link: "#references" },
-                { text: "Water & Wastewater – RO Economics", link: "#references" },
+                { text: "Most methods only target one contaminant type" },
+                { text: "RO systems waste 20-50% of water as reject" },
+                { text: "Multi-contaminant treatment typically requires multiple systems" },
               ]}
             />
           </div>

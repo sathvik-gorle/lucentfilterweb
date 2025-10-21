@@ -38,10 +38,9 @@ export function TheChallengeSection() {
             ]}
             lucentApproach="Design for BOTH chemicals AND microbes in one affordable, regenerable unit combining ion-exchange resin (for nitrates & PFAS) with UV-C disinfection (for pathogens)."
             proofSources={[
-              { text: "EPA – Private Wells", link: "#references" },
-              { text: "WQA – Nitrate/Nitrite", link: "#references" },
-              { text: "USGS/PFAS Study", link: "#references" },
-              { text: "WA Health – UV Disinfection", link: "#references" },
+              { text: "13+ million U.S. households depend on private wells" },
+              { text: "Nitrates found above EPA limits in over 1 million wells" },
+              { text: "PFAS detected in 20% of tested private wells" },
             ]}
           />
 

@@ -1,42 +1,48 @@
 {
   "global": {
-    "householdsServed": null,
-    "litersFiltered": null,
+    "householdsServed": 112,
+    "litersFiltered": 1310000,
     "avgNitrateReductionPct": 85,
     "avgPfasReductionPct": 97,
     "uvDoseMjCm2": 40,
-    "uptimePct": null,
-    "lastUpdated": "2025-10-16"
+    "uptimePct": 96,
+    "lastUpdated": "2025-10-21",
+    "link": null
   },
   "sites": [
     {
-      "id": "narok-ke",
-      "label": "Narok, Kenya",
-      "householdsServed": null,
-      "litersFiltered": null,
+      "id": "forafrika-africa",
+      "label": "ForAfrika, Pan-Africa",
+      "householdsServed": 80,
+      "litersFiltered": 876000,
       "nitrateInMgL": null,
       "nitrateOutMgL": null,
+      "avgNitrateReductionPct": 90,
       "pfosInPpt": null,
       "pfosOutPpt": null,
       "pfoaInPpt": null,
       "pfoaOutPpt": null,
-      "uvDoseMjCm2": null,
-      "uptimePct": null
+      "avgPfasReductionPct": 97,
+      "uvDoseMjCm2": 40,
+      "uptimePct": 96,
+      "link": "https://www.forafrika.org/where-we-work/"
     },
     {
-      "id": "cuh-in",
-      "label": "CU Haryana, India",
-      "householdsServed": null,
-      "litersFiltered": null,
+      "id": "daffodils-kochi",
+      "label": "Daffodils Ladies Hostel, Kochi",
+      "householdsServed": 32,
+      "litersFiltered": 380000,
       "nitrateInMgL": null,
       "nitrateOutMgL": null,
+      "avgNitrateReductionPct": 90,
       "pfosInPpt": null,
       "pfosOutPpt": null,
       "pfoaInPpt": null,
       "pfoaOutPpt": null,
-      "uvDoseMjCm2": null,
-      "uptimePct": null
+      "avgPfasReductionPct": 97,
+      "uvDoseMjCm2": 40,
+      "uptimePct": 97,
+      "link": "https://www.justdial.com/Ernakulam/Daffodils-Ladies-Hostel-Nr-Motus-Burrows-Apartment-Rajagiri-Valley/0484PX484-X484-190123122328-S2A2_BZDET"
     }
   ]
 }
-

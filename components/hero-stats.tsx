@@ -16,7 +16,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Info } from "lucide-react"
+import { Info, ExternalLink } from "lucide-react"
 import { motion } from "framer-motion"
 
 interface MetricsData {
@@ -70,12 +70,14 @@ export function HeroStats() {
       value: currentData.householdsServed,
       unit: "",
       tooltip: "Number of households using Lucent filters in pilot programs",
+      format: "number"
     },
     {
-      label: "Liters Filtered",
+      label: "Liters Filtered (Annual)",
       value: currentData.litersFiltered,
       unit: "L",
-      tooltip: "Total volume of water treated across pilot deployments",
+      tooltip: "Annual volume of water treated. Calculated as daily water consumption (5L/person/day for drinking) × 365 days × total people served.",
+      format: "large"
     },
     {
       label: "Nitrate Reduction",
@@ -120,12 +122,17 @@ export function HeroStats() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl md:text-3xl font-bold mb-3 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent">
-              Pilot Performance Data
-            </h3>
-            <p className="text-base md:text-lg text-muted-foreground">
-              Real-world results from field deployments
-            </p>
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent">
+                Performance Metrics
+              </h3>
+              <p className="text-base md:text-lg text-muted-foreground mb-1">
+                Real-world data from field deployments
+              </p>
+              <p className="text-xs text-muted-foreground/70">
+                Updated October 2025
+              </p>
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -202,7 +209,11 @@ export function HeroStats() {
                           transition={{ type: "spring", stiffness: 200 }}
                         >
                           <p className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
-                            {stat.value}
+                            {(stat as any).format === "large" && stat.value >= 1000000
+                              ? `${(stat.value / 1000000).toFixed(2)}M`
+                              : (stat as any).format === "large" && stat.value >= 1000
+                              ? `${(stat.value / 1000).toFixed(0)}K`
+                              : stat.value.toLocaleString()}
                           </p>
                           {stat.unit && (
                             <span className="text-base md:text-lg font-semibold text-muted-foreground">
@@ -225,6 +236,26 @@ export function HeroStats() {
             </TooltipProvider>
           ))}
         </motion.div>
+
+        {/* Partner Link */}
+        {(currentData as any).link && (
+          <motion.div
+            className="pt-4 border-t border-border/50"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <a
+              href={(currentData as any).link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm md:text-base text-accent hover:text-accent/80 transition-colors font-medium group"
+            >
+              <span>Visit Partner Site</span>
+              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
+          </motion.div>
+        )}
       </div>
     </motion.div>
   )

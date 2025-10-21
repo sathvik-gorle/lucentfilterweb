@@ -1,27 +1,52 @@
 {
   "pilots": [
     {
-      "id": "narok-ke",
-      "location": "Narok, Kenya",
-      "partner": "Asante African Foundation",
-      "coords": [-1.085, 35.871],
+      "id": "forafrika-africa",
+      "location": "Pan-Africa",
+      "partner": "ForAfrika",
+      "coords": [-8.7832, 34.5085],
       "startDate": "2025-08-01",
-      "households": null,
-      "litersFiltered": null,
-      "notes": "After two weeks of using Lucent, 'clean water has never been more accessible – the filters are cheap and easy to use, making it perfect for our village.'",
+      "filtersInstalled": 4,
+      "peopleServed": 480,
+      "householdsEst": 80,
+      "dailyWaterLiters": 2400,
+      "annualWaterLiters": 876000,
+      "nitrateReductionPct": 90,
+      "pfasRemovalRange": "90–99",
+      "uvMicrobeInactivation": "99.99%",
+      "uptimePct": 96,
+      "notes": "Africa's largest African-led humanitarian and development organization. Lucent deployed 4 filters at community water points.",
+      "shortBlurb": "Africa's largest African-led NGO. Lucent installed 4 filters across community water points to provide reliable daily access to safe drinking water.",
+      "website": "https://www.forafrika.org/where-we-work/",
       "images": ["/placeholder.jpg"]
     },
     {
-      "id": "cuh-in",
-      "location": "Central University of Haryana, India",
-      "partner": "Environmental Science Dept.",
-      "coords": [28.315, 76.564],
+      "id": "daffodils-kochi",
+      "location": "Kochi, India",
+      "partner": "Daffodils Ladies Hostel",
+      "coords": [10.0144, 76.3629],
       "startDate": "2025-09-01",
-      "households": null,
-      "litersFiltered": null,
-      "notes": "Academic collaboration focused on performance sampling, usability testing in rural settings, and validation of regeneration protocols.",
+      "filtersInstalled": 4,
+      "residentsServed": 190,
+      "householdsEst": 32,
+      "dailyWaterLiters": 1040,
+      "annualWaterLiters": 380000,
+      "nitrateReductionPct": 90,
+      "pfasRemovalRange": "90–99",
+      "uvMicrobeInactivation": "99.99%",
+      "uptimePct": 97,
+      "notes": "Safe, affordable women's hostel near Infopark. Lucent installed 4 filters to provide on-site potable water.",
+      "shortBlurb": "Women's hostel near Infopark, Kakkanad. Lucent installed 4 filters to provide safe, on-site drinking water for residents and staff.",
+      "website": "https://www.justdial.com/Ernakulam/Daffodils-Ladies-Hostel-Nr-Motus-Burrows-Apartment-Rajagiri-Valley/0484PX484-X484-190123122328-S2A2_BZDET",
       "images": ["/placeholder.jpg"]
     }
-  ]
+  ],
+  "globalStats": {
+    "totalFilters": 8,
+    "totalPeopleServed": 670,
+    "totalHouseholdsServed": 112,
+    "totalDailyWaterLiters": 3440,
+    "totalAnnualWaterLiters": 1256000,
+    "regions": ["Pan-Africa", "India"]
+  }
 }
-
