@@ -105,8 +105,8 @@ export function PilotMap() {
       partner: "ForAfrika",
       peopleServed: 480,
       householdsEst: 80,
-      dailyWaterLiters: 2400,
-      annualWaterLiters: 876000,
+      dailyWaterLiters: 1440,
+      annualWaterLiters: 525600,
       filtersInstalled: 4,
       status: "Active",
       description: "Africa's largest African-led humanitarian organization. Lucent installed 4 filters across community water points to provide reliable daily access to safe drinking water for 480 people.",
@@ -128,8 +128,8 @@ export function PilotMap() {
       coordinates: "10.014°N, 76.363°E",
       partner: "Daffodils Ladies Hostel",
       residentsServed: 190,
-      dailyWaterLiters: 1040,
-      annualWaterLiters: 380000,
+      dailyWaterLiters: 570,
+      annualWaterLiters: 207900,
       filtersInstalled: 4,
       status: "Active",
       description: "Women's residential hostel near Infopark, Kakkanad. Lucent installed 4 filters providing safe, on-site drinking water for 190 residents and staff.",
@@ -170,10 +170,19 @@ export function PilotMap() {
             Global Deployments
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Lucent has deployed <strong className="text-foreground">8 water filters</strong> across Africa and India through partnerships with ForAfrika and Daffodils Ladies Hostel, providing over <strong className="text-foreground">1.3 million liters</strong> of clean water annually to <strong className="text-foreground">670 people</strong>.
+            Lucent has deployed <strong className="text-foreground">8 water filters</strong> across Africa and India through partnerships with ForAfrika and Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">734,000 liters</strong> of clean water annually to <strong className="text-foreground">670 people</strong>.
           </p>
           <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4">
-            * Annual volume calculated as 5L per person per day for drinking water × 365 days
+            * Drinking water only: 3L/person/day × 365 days (WHO standard). Total water needs: 7.5-15L/day per person.
+          </p>
+          <p className="text-xs text-muted-foreground/70 max-w-2xl mx-auto mt-2">
+            Note: Actual filtration throughput varies by cartridge capacity (10,000-40,000L) and contaminant load.
+          </p>
+          <p className="text-xs text-muted-foreground/70 max-w-2xl mx-auto mt-3 space-y-1">
+            <span className="block font-semibold">How we calculated this:</span>
+            <span className="block">• ForAfrika: 480 people × 3L/day × 365 = 525,600 L/year</span>
+            <span className="block">• Daffodils: 190 residents × 3L/day × 365 = 207,900 L/year</span>
+            <span className="block">• Total: 733,500 L/year drinking water capacity</span>
           </p>
         </motion.div>
 
@@ -201,7 +210,7 @@ export function PilotMap() {
                 <strong className="text-foreground">8 Lucent filters deployed</strong> • Serving 670 people across Africa & India
               </p>
               <p className="text-xs text-muted-foreground/70">
-                Total annual capacity: 1.31M L/year
+                Total annual capacity: ~734K L/year (drinking water)
               </p>
             </div>
           </Card>

@@ -76,7 +76,7 @@ export function HeroStats() {
       label: "Liters Filtered (Annual)",
       value: currentData.litersFiltered,
       unit: "L",
-      tooltip: "Annual volume of water treated. Calculated as daily water consumption (5L/person/day for drinking) × 365 days × total people served.",
+      tooltip: "Annual drinking water only. Calculated as 3L/person/day (WHO standard) × 365 days. Ranges: 2-3L/day drinking; 7.5L/day survival needs; 15L/day basic household use. Actual throughput depends on cartridge capacity and contaminant load.",
       format: "large"
     },
     {
@@ -155,6 +155,19 @@ export function HeroStats() {
             </Select>
           </motion.div>
         </div>
+
+        {/* Performance Disclaimer */}
+        <motion.div
+          className="mt-6 p-4 bg-muted/30 rounded-lg border border-border/50"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            <strong className="text-foreground">Performance Disclaimer:</strong> All metrics depend on influent water quality (contaminant concentrations, competing ions, TOC), flow rate, contact time, and maintenance. Field testing should verify outlet water meets local safety targets. Cartridge throughput assumes moderate contamination; actual capacity varies.
+          </p>
+        </motion.div>
 
         {/* Stats Grid */}
         <motion.div 

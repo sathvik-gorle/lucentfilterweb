@@ -166,7 +166,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              PFAS & Nitrate Removal with <span className="gradient-text">UV Disinfection.</span> Verified.
+              PFAS & Nitrate Removal with <span className="gradient-text">UV Disinfection.</span> Lab-Tested.
             </motion.h1>
             <motion.p
               className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto xl:max-w-4xl"
@@ -210,7 +210,7 @@ export function Hero() {
               NSF/ANSI 53/58 Ready
             </Badge>
             <Badge variant="secondary" className="px-4 py-2.5 text-sm font-medium bg-secondary/50 hover:bg-secondary/70 transition-colors">
-              Lab-Tested
+              Lab-Tested Under Controlled Conditions
             </Badge>
             <Badge variant="secondary" className="px-4 py-2.5 text-sm font-medium bg-secondary/50 hover:bg-secondary/70 transition-colors">
               BPA-Free

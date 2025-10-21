@@ -50,9 +50,9 @@ export function EffectivenessStats() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Proven Effectiveness</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Lab-Tested Effectiveness</h2>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
-              Laboratory-verified performance metrics under controlled test conditions
+              Laboratory-tested performance metrics under controlled test conditions
             </p>
           </motion.div>
 

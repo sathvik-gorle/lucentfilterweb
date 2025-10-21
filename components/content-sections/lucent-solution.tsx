@@ -31,7 +31,7 @@ export function LucentSolutionSection() {
                   whyItMatters={[
                     "Ion exchange is a proven method for nitrate removal in wells",
                     "Strong-base resins achieve 90-99% PFAS removal, often outperforming carbon",
-                    "Regenerable design extends cartridge lifespan almost indefinitely",
+                    "Regenerable design allows multiple reuse cycles (3-5 years typical service life)",
                   ]}
                   keyFacts={[
                     {

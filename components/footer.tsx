@@ -117,6 +117,13 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Scientific Disclaimer */}
+          <div className="mb-8 p-6 bg-primary-foreground/10 rounded-lg border-2 border-primary-foreground/20">
+            <p className="text-sm text-primary-foreground/90 leading-relaxed max-w-4xl mx-auto">
+              <strong className="text-primary-foreground">Scientific Disclaimer:</strong> All water quality and performance statistics are estimates derived from peer-reviewed data, EPA and WHO references, third-party laboratory testing under controlled conditions, and field performance of pilot deployments. Actual results will vary with local contaminant levels, water chemistry (pH, alkalinity, competing ions), flow rate, temperature, and maintenance practices. Users should conduct inlet and outlet water testing to verify system performance meets their specific water quality targets.
+            </p>
+          </div>
+
           {/* Bottom bar */}
           <div className="pt-8 border-t border-primary-foreground/20 space-y-3">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">

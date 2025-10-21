@@ -649,11 +649,11 @@ export default function WhitepaperPage() {
                 <ul>
                   <li>
                     <strong>ForAfrika (Pan-Africa):</strong> Africa's largest African-led humanitarian organization. 4 filters deployed 
-                    serving 480 people with 876,000 liters/year capacity.
+                    serving 480 people with 525,600 liters/year capacity (drinking water only, 3L/person/day).
                   </li>
                   <li>
                     <strong>Daffodils Ladies Hostel (Kochi, India):</strong> Women's residential hostel near Infopark, Kakkanad. 4 filters 
-                    deployed serving 190 residents with 380,000 liters/year capacity.
+                    deployed serving 190 residents with 207,900 liters/year capacity (drinking water only, 3L/person/day).
                   </li>
                 </ul>
 
@@ -665,8 +665,9 @@ export default function WhitepaperPage() {
                       <p className="text-sm text-muted-foreground">People Served</p>
                     </div>
                     <div>
-                      <p className="text-4xl font-bold text-accent mb-2">1.31M</p>
+                      <p className="text-4xl font-bold text-accent mb-2">~734K</p>
                       <p className="text-sm text-muted-foreground">Liters/Year Capacity</p>
+                      <p className="text-xs text-muted-foreground/70">(drinking water, 3L/day)</p>
                     </div>
                     <div>
                       <p className="text-4xl font-bold text-primary mb-2">112</p>

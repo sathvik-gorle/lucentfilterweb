@@ -9,8 +9,8 @@
       "filtersInstalled": 4,
       "peopleServed": 480,
       "householdsEst": 80,
-      "dailyWaterLiters": 2400,
-      "annualWaterLiters": 876000,
+      "dailyWaterLiters": 1440,
+      "annualWaterLiters": 525600,
       "nitrateReductionPct": 90,
       "pfasRemovalRange": "90–99",
       "uvMicrobeInactivation": "99.99%",
@@ -29,8 +29,8 @@
       "filtersInstalled": 4,
       "residentsServed": 190,
       "householdsEst": 32,
-      "dailyWaterLiters": 1040,
-      "annualWaterLiters": 380000,
+      "dailyWaterLiters": 570,
+      "annualWaterLiters": 207900,
       "nitrateReductionPct": 90,
       "pfasRemovalRange": "90–99",
       "uvMicrobeInactivation": "99.99%",
@@ -45,8 +45,8 @@
     "totalFilters": 8,
     "totalPeopleServed": 670,
     "totalHouseholdsServed": 112,
-    "totalDailyWaterLiters": 3440,
-    "totalAnnualWaterLiters": 1256000,
+    "totalDailyWaterLiters": 2010,
+    "totalAnnualWaterLiters": 733650,
     "regions": ["Pan-Africa", "India"]
   }
 }

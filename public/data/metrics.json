@@ -1,7 +1,7 @@
 {
   "global": {
     "householdsServed": 112,
-    "litersFiltered": 1310000,
+    "litersFiltered": 733650,
     "avgNitrateReductionPct": 85,
     "avgPfasReductionPct": 97,
     "uvDoseMjCm2": 40,
@@ -14,7 +14,7 @@
       "id": "forafrika-africa",
       "label": "ForAfrika, Pan-Africa",
       "householdsServed": 80,
-      "litersFiltered": 876000,
+      "litersFiltered": 525600,
       "nitrateInMgL": null,
       "nitrateOutMgL": null,
       "avgNitrateReductionPct": 90,
@@ -31,7 +31,7 @@
       "id": "daffodils-kochi",
       "label": "Daffodils Ladies Hostel, Kochi",
       "householdsServed": 32,
-      "litersFiltered": 380000,
+      "litersFiltered": 207900,
       "nitrateInMgL": null,
       "nitrateOutMgL": null,
       "avgNitrateReductionPct": 90,

@@ -61,7 +61,7 @@ export function ComparisonTable() {
                       <td className="text-center py-3 px-3 bg-accent/5">
                         <div className="flex items-center justify-center gap-1">
                           <Check className="w-4 h-4 text-accent" />
-                          <span className="font-semibold">{">"} 85%</span>
+                          <span className="font-semibold">80-95%</span>
                         </div>
                       </td>
                       <td className="text-center py-3 px-3">
@@ -89,9 +89,12 @@ export function ComparisonTable() {
                     <tr className="border-b">
                       <td className="py-3 px-3 font-medium sticky left-0 bg-background z-10">PFAS</td>
                       <td className="text-center py-3 px-3 bg-accent/5">
-                        <div className="flex items-center justify-center gap-1">
-                          <Check className="w-4 h-4 text-accent" />
-                          <span className="font-semibold">90-99%</span>
+                        <div className="flex flex-col items-center justify-center gap-0.5">
+                          <div className="flex items-center gap-1">
+                            <Check className="w-4 h-4 text-accent" />
+                            <span className="font-semibold">90-99%*</span>
+                          </div>
+                          <span className="text-[10px] text-muted-foreground">controlled</span>
                         </div>
                       </td>
                       <td className="text-center py-3 px-3">

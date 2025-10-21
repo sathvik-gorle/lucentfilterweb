@@ -6,7 +6,7 @@ export function FAQ() {
     {
       question: "Does Lucent remove PFAS from water?",
       answer:
-        "Yes. Laboratory testing shows Lucent removes 90-99% of PFOA and PFOS under standard test conditions (200-300 ng/L inlet concentration, 0.5 GPM flow rate, pH 7.5). The ion-exchange resin is specifically designed to capture forever chemicals through high-affinity functional groups.",
+        "Yes. Laboratory testing under controlled conditions (200-300 ng/L inlet concentration, 0.5 GPM flow rate, pH 7.5, clear water) shows Lucent removes 90-99% of long-chain PFOA and PFOS. Actual field performance will vary based on local water chemistry, competing ions (sulfate, bicarbonate), total organic carbon (TOC), and flow rate. Regular water testing is recommended to verify outlet concentrations meet safety targets.",
     },
     {
       question: "How does ion-exchange compare to activated carbon for PFAS removal?",
@@ -16,7 +16,12 @@ export function FAQ() {
     {
       question: "How long does a cartridge last?",
       answer:
-        "Filter lifespan depends on inlet PFAS concentration and water usage. For a typical household with moderate contamination levels, cartridges last 6-9 months or approximately 1,500 gallons (5,700 liters). The system includes an LED indicator that alerts you when replacement is needed based on throughput and pressure differential.",
+        "Filter lifespan depends on inlet contaminant concentration, water chemistry, and usage. For moderate contamination levels (10-50 mg/L nitrate or <1 µg/L PFAS), cartridges typically treat 10,000-40,000 liters (2,600-10,500 gallons) or 6-12 months before regeneration or replacement is needed. Performance monitoring via water testing is recommended.",
+    },
+    {
+      question: "Can the ion-exchange resin be regenerated indefinitely?",
+      answer:
+        "For nitrate removal, the resin can be regenerated multiple times using salt brine (10% NaCl solution), similar to water softener regeneration. For PFAS applications, regeneration is more complex due to the strong binding of PFAS molecules and waste management concerns. Most residential PFAS filters are single-use until safe regeneration protocols and waste disposal methods are established. Resin service life is typically 3-5 years with proper maintenance before replacement is needed.",
     },
     {
       question: "Does the filter reduce TDS (total dissolved solids)?",
