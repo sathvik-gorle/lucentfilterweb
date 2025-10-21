@@ -45,50 +45,48 @@ export default function WhitepaperPage() {
         <div className="container mx-auto px-4">
           <Card className="max-w-6xl mx-auto shadow-2xl border-2 bg-card">
             <CardContent className="p-10 md:p-16 lg:p-20">
-              <article className="prose prose-lg prose-slate max-w-none dark:prose-invert 
-                prose-headings:font-bold 
-                prose-h1:text-4xl prose-h1:mb-6 prose-h1:mt-0 prose-h1:pb-4 prose-h1:border-b-4 prose-h1:border-primary
-                prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b-2 prose-h2:border-accent/40 prose-h2:text-primary
-                prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-5 prose-h3:text-accent prose-h3:font-semibold
-                prose-h4:text-xl prose-h4:mt-8 prose-h4:mb-4 prose-h4:text-accent/80
-                prose-p:text-[17px] prose-p:leading-relaxed prose-p:mb-5 prose-p:text-justify
-                prose-li:text-[17px] prose-li:leading-relaxed prose-li:my-2
-                prose-strong:text-accent prose-strong:font-bold
-                prose-a:text-primary prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
-                prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-accent/5 prose-blockquote:py-2 prose-blockquote:px-6
-                prose-code:text-accent prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded">
+              <article className="prose prose-xl max-w-none dark:prose-invert 
+                prose-headings:font-serif prose-headings:font-bold prose-headings:tracking-tight
+                prose-h1:text-5xl prose-h1:mb-10 prose-h1:mt-0 prose-h1:pb-6 prose-h1:border-b-4 prose-h1:border-primary/30
+                prose-h2:text-4xl prose-h2:mt-20 prose-h2:mb-10 prose-h2:pb-4 prose-h2:border-b-2 prose-h2:border-border prose-h2:text-foreground
+                prose-h3:text-2xl prose-h3:mt-14 prose-h3:mb-6 prose-h3:text-foreground prose-h3:font-semibold
+                prose-h4:text-xl prose-h4:mt-10 prose-h4:mb-5 prose-h4:text-foreground/90 prose-h4:font-medium
+                prose-p:text-base prose-p:leading-[2] prose-p:mb-8 prose-p:text-foreground/90 prose-p:font-normal
+                prose-li:text-base prose-li:leading-[1.9] prose-li:my-3
+                prose-strong:text-foreground prose-strong:font-semibold
+                prose-em:text-foreground/70 prose-em:text-sm prose-em:font-normal
+                prose-a:text-primary prose-a:font-normal prose-a:no-underline hover:prose-a:underline
+                prose-ul:my-8 prose-ul:space-y-3
+                prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-accent/5 prose-blockquote:py-2 prose-blockquote:px-6">
                 
                 {/* Title */}
                 <h1 className="text-center">
                   Lucent: A Regenerable Ion-Exchange & UV Well Water Filter for Safe, Affordable Drinking Water
                 </h1>
 
-                <div className="text-center not-prose mb-12 pb-8 border-b">
-                  <p className="text-lg font-semibold text-muted-foreground">Sathvik Gorle, Arjun Rawal, Hadi Abdul</p>
-                  <p className="text-base text-muted-foreground mt-2">Diamond Challenge 2025 Finalist</p>
-                  <p className="text-sm text-muted-foreground mt-1">Updated October 2025</p>
+                <div className="text-center not-prose mb-16 pb-10 border-b-2 border-border">
+                  <p className="text-lg font-medium text-foreground/80 tracking-wide">Sathvik Gorle, Arjun Rawal, Hadi Abdul</p>
+                  <p className="text-sm text-muted-foreground mt-4 italic">Diamond Challenge 2025 Finalist</p>
+                  <p className="text-sm text-muted-foreground mt-2">Updated October 2025</p>
                 </div>
 
                 {/* Executive Summary */}
-                <div className="not-prose bg-gradient-to-r from-accent/10 via-accent/5 to-primary/10 border-l-4 border-accent p-8 rounded-r-xl mb-14 shadow-lg">
-                  <div className="flex items-start gap-3 mb-4">
-                    <Beaker className="w-7 h-7 text-accent mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="text-xl font-bold text-accent mb-3">Executive Summary</p>
-                      <p className="text-base leading-relaxed mb-3">
-                        Lucent addresses the critical need for affordable, comprehensive water treatment in rural communities worldwide. 
-                        By combining <strong>regenerable ion-exchange resin</strong> with <strong>UV-C disinfection</strong> in a modular 
-                        3D-printed housing, Lucent removes both chemical contaminants (nitrates, PFAS) and microbial pathogens—filling a 
-                        crucial gap in current water treatment solutions.
-                      </p>
-                      <p className="text-base leading-relaxed">
-                        This whitepaper provides comprehensive technical validation through ion-exchange chemistry analysis, UV reactor 
-                        modeling, material engineering studies, and field performance data. With proven <strong>90-99% PFAS removal</strong>, 
-                        <strong>≥90% nitrate reduction</strong>, and <strong>99.99% pathogen inactivation</strong>, Lucent delivers 
-                        lab-validated performance at an estimated <strong>$150 retail price</strong>—making advanced water treatment 
-                        accessible to the 13+ million U.S. households and hundreds of millions globally who rely on untreated well water.
-                      </p>
-                    </div>
+                <div className="not-prose bg-muted/30 border-l-4 border-primary/50 p-10 rounded-r-lg mb-20">
+                  <p className="text-xl font-serif font-bold text-foreground mb-6 tracking-tight">Executive Summary</p>
+                  <div className="space-y-6 text-base leading-[2] text-foreground/85">
+                    <p>
+                      Lucent addresses the critical need for affordable, comprehensive water treatment in rural communities worldwide. 
+                      By combining regenerable ion-exchange resin with UV-C disinfection in a modular 3D-printed housing, Lucent removes 
+                      both chemical contaminants (nitrates, PFAS) and microbial pathogens—filling a crucial gap in current water treatment 
+                      solutions.
+                    </p>
+                    <p>
+                      This whitepaper provides comprehensive technical validation through ion-exchange chemistry analysis, UV reactor 
+                      modeling, material engineering studies, and field performance data. With proven 90-99% PFAS removal, ≥90% nitrate 
+                      reduction, and 99.99% pathogen inactivation, Lucent delivers lab-validated performance at an estimated $150 retail 
+                      price—making advanced water treatment accessible to the 13+ million U.S. households and hundreds of millions globally 
+                      who rely on untreated well water.
+                    </p>
                   </div>
                 </div>
 
@@ -96,7 +94,7 @@ export default function WhitepaperPage() {
                 <h2>1. Introduction</h2>
                 
                 <p>
-                  Access to clean drinking water is a fundamental human right, recognized by the United Nations in 2010 
+                  Access to clean drinking water is a fundamental human right, recognized by the United Nations in 2010
                   (<em>malteser-international.org</em>). Yet in practice, billions of people worldwide still lack safe water. Rural 
                   communities are especially vulnerable, often relying on untreated well water that may be contaminated with chemicals 
                   and microbes. Globally, about <strong>2.5 billion people</strong> depend on groundwater (wells and aquifers) to meet 
@@ -157,21 +155,20 @@ export default function WhitepaperPage() {
                   shallow and scattered, they are vulnerable to nearby pollution sources (landfills, factories, airports, etc.).
                 </p>
 
-                <div className="not-prose bg-destructive/10 border-l-4 border-destructive p-6 rounded-r-lg my-8">
-                  <p className="text-base font-bold text-destructive mb-3 flex items-center gap-2">
-                    <Shield className="w-5 h-5" />
-                    PFAS Contamination Crisis
-                  </p>
-                  <p className="text-base leading-relaxed mb-2">
-                    A 2022 U.S. Geological Survey study spanning 16 states found PFAS in <strong>20% of tested private wells</strong> 
-                    (and 60% of public wells) (<em>theguardian.com</em>). With ~43 million Americans on private well water 
-                    (<em>theguardian.com</em>), this suggests <strong>millions of rural residents</strong> may be unknowingly exposed to PFAS.
-                  </p>
-                  <p className="text-base leading-relaxed">
-                    These chemicals pose serious health risks: PFAS exposure is linked to cancers, developmental issues, liver and thyroid 
-                    disease, immune system suppression, and more (<em>theguardian.com</em>). Compounds like PFOS and PFOA are toxic even 
-                    at <strong>parts-per-trillion levels</strong>, prompting new health advisories as low as 1 ppt in water.
-                  </p>
+                <div className="not-prose bg-muted/20 border-l-4 border-foreground/30 p-8 rounded-r-md my-12">
+                  <p className="text-base font-serif font-semibold text-foreground mb-4 tracking-tight">PFAS Contamination Crisis</p>
+                  <div className="space-y-5 text-base leading-[2] text-foreground/80">
+                    <p>
+                      A 2022 U.S. Geological Survey study spanning 16 states found PFAS in 20% of tested private wells 
+                      (and 60% of public wells) (<em>theguardian.com</em>). With ~43 million Americans on private well water 
+                      (<em>theguardian.com</em>), this suggests millions of rural residents may be unknowingly exposed to PFAS.
+                    </p>
+                    <p>
+                      These chemicals pose serious health risks: PFAS exposure is linked to cancers, developmental issues, liver and thyroid 
+                      disease, immune system suppression, and more (<em>theguardian.com</em>). Compounds like PFOS and PFOA are toxic even 
+                      at parts-per-trillion levels, prompting new health advisories as low as 1 ppt in water.
+                    </p>
+                  </div>
                 </div>
 
                 <p>
