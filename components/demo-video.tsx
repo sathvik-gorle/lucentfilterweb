@@ -33,7 +33,7 @@ export function DemoVideo() {
   ]
 
   return (
-    <section id="demo" className="py-12 md:py-16 relative overflow-hidden bg-gradient-to-b from-muted/30 via-background to-muted/30">
+    <section id="demo" className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-muted/30 via-background to-muted/30">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-accent/40 rounded-full blur-[140px]" />
@@ -62,7 +62,7 @@ export function DemoVideo() {
 
         {/* Main Featured Video */}
         <motion.div
-          className="max-w-5xl mx-auto mb-16"
+          className="max-w-6xl mx-auto mb-20"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -92,8 +92,8 @@ export function DemoVideo() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-accent flex items-center justify-center shadow-2xl border-8 border-white/30">
-                      <Play className="w-16 h-16 md:w-20 md:h-20 text-white ml-2" fill="white" />
+                    <div className="w-36 h-36 md:w-44 md:h-44 rounded-full bg-accent flex items-center justify-center shadow-2xl border-8 border-white/30">
+                      <Play className="w-18 h-18 md:w-24 md:h-24 text-white ml-2" fill="white" />
                     </div>
                   </motion.div>
                   
@@ -123,7 +123,7 @@ export function DemoVideo() {
 
         {/* Secondary Videos */}
         <motion.div
-          className="grid md:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto"
+          className="grid md:grid-cols-2 gap-10 md:gap-12 max-w-6xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -140,7 +140,7 @@ export function DemoVideo() {
               whileHover={{ y: -8, scale: 1.02 }}
               onClick={() => setSelectedVideo(index + 1)}
             >
-              <Card className="overflow-hidden border-3 border-border/80 group-hover:border-accent/60 transition-all duration-500 shadow-xl group-hover:shadow-2xl">
+              <Card className="overflow-hidden border-4 border-border/80 group-hover:border-accent/70 transition-all duration-500 shadow-xl group-hover:shadow-2xl">
                 <div className="relative aspect-video bg-black">
                   {/* Thumbnail */}
                   <img
@@ -155,10 +155,10 @@ export function DemoVideo() {
                   {/* Play Button */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <motion.div
-                      className="w-24 h-24 rounded-full bg-white/25 backdrop-blur-sm flex items-center justify-center border-4 border-white/50 group-hover:bg-accent group-hover:border-white/70 transition-all duration-300"
+                      className="w-28 h-28 rounded-full bg-white/25 backdrop-blur-sm flex items-center justify-center border-4 border-white/50 group-hover:bg-accent group-hover:border-white/70 transition-all duration-300"
                       whileHover={{ scale: 1.15 }}
                     >
-                      <Play className="w-12 h-12 text-white ml-1.5" fill="white" />
+                      <Play className="w-14 h-14 text-white ml-1.5" fill="white" />
                     </motion.div>
                   </div>
                   
@@ -171,10 +171,10 @@ export function DemoVideo() {
                           {video.duration}
                         </Badge>
                       </div>
-                      <h4 className="text-2xl font-bold text-white drop-shadow-lg">
+                      <h4 className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg">
                         {video.title}
                       </h4>
-                      <p className="text-base text-white/90 drop-shadow-md">
+                      <p className="text-base md:text-lg text-white/90 drop-shadow-md">
                         {video.description}
                       </p>
                     </div>
