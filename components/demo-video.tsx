@@ -14,15 +14,17 @@ export function DemoVideo() {
       duration: "4:32",
     },
     {
-      title: "Partner Testimonial",
-      description: "Real-world impact from our community deployments",
-      thumbnail: "/man-testimonial-video-happy-customer.jpg",
+      title: "Daffodils Pilot - Field Test",
+      description: "Real-world pilot demonstration of our filtration system",
+      thumbnail: "/daffodils-testimonial-thumbnail.png",
+      videoSrc: "/daffodils-testimonial.mov",
       duration: "2:15",
     },
     {
-      title: "Lab Testing & Results",
-      description: "Performance data and expert analysis",
-      thumbnail: "/woman-scientist-testimonial-video.jpg",
+      title: "Daffodils - Live Water Testing",
+      description: "Kerry's feedback from on-site water testing",
+      thumbnail: "/daffodils-kerry-testimonial-thumbnail.png",
+      videoSrc: "/daffodils-kerry-testimonial.mp4",
       duration: "3:45",
     }
   ]
@@ -51,7 +53,7 @@ export function DemoVideo() {
             See Lucent in Action
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Technical demonstrations, partner testimonials, and expert analysis
+            Real-world deployments and live feedback from Daffodils pilot testing
           </p>
         </motion.div>
 
