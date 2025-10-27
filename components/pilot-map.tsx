@@ -99,17 +99,17 @@ export function PilotMap() {
   const pilots = [
     {
       id: "forafrika-africa",
-      location: "ForAfrika",
-      country: "🌍 Pan-Africa",
-      coordinates: "8.783°S, 34.509°E",
-      partner: "ForAfrika",
+      location: "Clean Water and Sanitation Africa Cameroon",
+      country: "🇨🇲 Cameroon",
+      coordinates: "5.963°N, 10.159°E",
+      partner: "Clean Water and Sanitation Africa Cameroon",
       peopleServed: 480,
       householdsEst: 80,
       dailyWaterLiters: 1440,
       annualWaterLiters: 525600,
       filtersInstalled: 4,
       status: "Active",
-      description: "Africa's largest African-led humanitarian organization. Lucent installed 4 filters across community water points to provide reliable daily access to safe drinking water for 480 people.",
+      description: "CWASAF is a non-profit organization promoting proper hygiene, sanitation, and environmental protection in Cameroon. Lucent installed 4 filters across community water points to provide reliable daily access to safe drinking water for 480 people.",
       image: "/placeholder.jpg",
       highlights: [
         "4 filters deployed",
@@ -118,7 +118,7 @@ export function PilotMap() {
         "99.99% microbe inactivation",
         "96% uptime"
       ],
-      website: "https://www.forafrika.org/where-we-work/",
+      website: "https://www.cameroonheroes.gaicam.ngo/member/clean-water-and-sanitation-africa-cwasaf/",
       labelType: "people"
     },
     {
@@ -170,7 +170,7 @@ export function PilotMap() {
             Global Deployments
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Lucent has deployed <strong className="text-foreground">8 water filters</strong> across Africa and India through partnerships with ForAfrika and Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">734,000 liters</strong> of clean water annually to <strong className="text-foreground">670 people</strong>.
+            Lucent has deployed <strong className="text-foreground">8 water filters</strong> across Cameroon and India through partnerships with Clean Water and Sanitation Africa Cameroon and Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">734,000 liters</strong> of clean water annually to <strong className="text-foreground">670 people</strong>.
           </p>
           <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4">
             * Drinking water only: 3L/person/day × 365 days (WHO standard). Total water needs: 7.5-15L/day per person.
@@ -180,7 +180,7 @@ export function PilotMap() {
           </p>
           <p className="text-xs text-muted-foreground/70 max-w-2xl mx-auto mt-3 space-y-1">
             <span className="block font-semibold">How we calculated this:</span>
-            <span className="block">• ForAfrika: 480 people × 3L/day × 365 = 525,600 L/year</span>
+            <span className="block">• CWASAF Cameroon: 480 people × 3L/day × 365 = 525,600 L/year</span>
             <span className="block">• Daffodils: 190 residents × 3L/day × 365 = 207,900 L/year</span>
             <span className="block">• Total: 733,500 L/year drinking water capacity</span>
           </p>
@@ -207,7 +207,7 @@ export function PilotMap() {
 
             <div className="mt-8 text-center space-y-2">
               <p className="text-lg text-muted-foreground">
-                <strong className="text-foreground">8 Lucent filters deployed</strong> • Serving 670 people across Africa & India
+                <strong className="text-foreground">8 Lucent filters deployed</strong> • Serving 670 people across Cameroon & India
               </p>
               <p className="text-xs text-muted-foreground/70">
                 Total annual capacity: ~734K L/year (drinking water)

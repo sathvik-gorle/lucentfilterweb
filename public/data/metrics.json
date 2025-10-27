@@ -12,7 +12,7 @@
   "sites": [
     {
       "id": "forafrika-africa",
-      "label": "ForAfrika, Pan-Africa",
+      "label": "Clean Water and Sanitation Africa Cameroon",
       "householdsServed": 80,
       "litersFiltered": 525600,
       "nitrateInMgL": null,
@@ -25,7 +25,7 @@
       "avgPfasReductionPct": 97,
       "uvDoseMjCm2": 40,
       "uptimePct": 96,
-      "link": "https://www.forafrika.org/where-we-work/"
+      "link": "https://www.cameroonheroes.gaicam.ngo/member/clean-water-and-sanitation-africa-cwasaf/"
     },
     {
       "id": "daffodils-kochi",

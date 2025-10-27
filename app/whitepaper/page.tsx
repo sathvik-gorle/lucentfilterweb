@@ -643,12 +643,12 @@ export default function WhitepaperPage() {
 
                 <h3>5.4 Current Field Deployments</h3>
                 <p>
-                  Lucent has successfully deployed <strong>8 water filters</strong> across Africa and India through partnerships with:
+                  Lucent has successfully deployed <strong>8 water filters</strong> across Cameroon and India through partnerships with:
                 </p>
 
                 <ul>
                   <li>
-                    <strong>ForAfrika (Pan-Africa):</strong> Africa's largest African-led humanitarian organization. 4 filters deployed 
+                    <strong><a href="https://www.cameroonheroes.gaicam.ngo/member/clean-water-and-sanitation-africa-cwasaf/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Clean Water and Sanitation Africa Cameroon (CWASAF)</a>:</strong> Non-profit organization promoting proper hygiene, sanitation, and environmental protection in Cameroon. 4 filters deployed 
                     serving 480 people with 525,600 liters/year capacity (drinking water only, 3L/person/day).
                   </li>
                   <li>
