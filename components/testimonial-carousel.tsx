@@ -3,11 +3,12 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, Play, Star } from "lucide-react"
+import { ChevronLeft, ChevronRight, Play, Star, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 export function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
   const testimonials = [
     {
@@ -72,6 +73,7 @@ export function TestimonialCarousel() {
                           className="relative aspect-square rounded-lg overflow-hidden bg-muted group cursor-pointer"
                           whileHover={{ scale: 1.02 }}
                           transition={{ type: "spring", stiffness: 300 }}
+                          onClick={() => setIsVideoPlaying(true)}
                         >
                           <img
                             src={testimonials[currentIndex].videoThumb || "/placeholder.svg"}
@@ -142,6 +144,55 @@ export function TestimonialCarousel() {
               </Button>
             </div>
           </div>
+
+          {/* Video Modal */}
+          <AnimatePresence>
+            {isVideoPlaying && testimonials[currentIndex].videoSrc && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+                onClick={() => setIsVideoPlaying(false)}
+              >
+                <motion.div
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.9, opacity: 0 }}
+                  transition={{ type: "spring", duration: 0.5 }}
+                  className="relative w-full max-w-6xl"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Close Button */}
+                  <button
+                    onClick={() => setIsVideoPlaying(false)}
+                    className="absolute -top-12 right-0 text-white hover:text-accent transition-colors z-10"
+                    aria-label="Close video"
+                  >
+                    <X className="w-8 h-8" />
+                  </button>
+
+                  {/* Video Player */}
+                  <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+                    <video
+                      src={testimonials[currentIndex].videoSrc}
+                      controls
+                      autoPlay
+                      className="w-full h-full"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+
+                  {/* Video Info */}
+                  <div className="mt-4 text-white">
+                    <h3 className="text-2xl font-bold mb-2">{testimonials[currentIndex].name}</h3>
+                    <p className="text-white/80">{testimonials[currentIndex].quote}</p>
+                  </div>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>

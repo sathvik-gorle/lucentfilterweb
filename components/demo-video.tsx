@@ -1,11 +1,14 @@
 "use client"
 
+import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Play, Clock } from "lucide-react"
-import { motion } from "framer-motion"
+import { Play, Clock, X } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 export function DemoVideo() {
+  const [selectedVideo, setSelectedVideo] = useState<number | null>(null)
+
   const videos = [
     {
       title: "How Lucent Works",
@@ -65,7 +68,7 @@ export function DemoVideo() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <div className="relative group cursor-pointer">
+          <div className="relative group cursor-pointer" onClick={() => setSelectedVideo(0)}>
             {/* Glow Effect */}
             <div className="absolute -inset-4 bg-gradient-to-r from-accent/50 via-primary/50 to-accent/50 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
             
@@ -135,6 +138,7 @@ export function DemoVideo() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 + index * 0.15 }}
               whileHover={{ y: -8, scale: 1.02 }}
+              onClick={() => setSelectedVideo(index + 1)}
             >
               <Card className="overflow-hidden border-3 border-border/80 group-hover:border-accent/60 transition-all duration-500 shadow-xl group-hover:shadow-2xl">
                 <div className="relative aspect-video bg-black">
@@ -180,6 +184,61 @@ export function DemoVideo() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* Video Modal */}
+        <AnimatePresence>
+          {selectedVideo !== null && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+              onClick={() => setSelectedVideo(null)}
+            >
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ type: "spring", duration: 0.5 }}
+                className="relative w-full max-w-6xl"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Close Button */}
+                <button
+                  onClick={() => setSelectedVideo(null)}
+                  className="absolute -top-12 right-0 text-white hover:text-accent transition-colors z-10"
+                  aria-label="Close video"
+                >
+                  <X className="w-8 h-8" />
+                </button>
+
+                {/* Video Player */}
+                <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+                  {videos[selectedVideo].videoSrc ? (
+                    <video
+                      src={videos[selectedVideo].videoSrc}
+                      controls
+                      autoPlay
+                      className="w-full h-full"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <div className="flex items-center justify-center h-full text-white">
+                      <p>Video preview coming soon</p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Video Info */}
+                <div className="mt-4 text-white">
+                  <h3 className="text-2xl font-bold mb-2">{videos[selectedVideo].title}</h3>
+                  <p className="text-white/80">{videos[selectedVideo].description}</p>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   )
