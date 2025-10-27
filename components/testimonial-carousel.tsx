@@ -11,32 +11,20 @@ export function TestimonialCarousel() {
 
   const testimonials = [
     {
-      name: "Sarah M.",
-      location: "Portland, OR",
-      quote: "The water tastes noticeably cleaner, and I feel confident about PFAS removal.",
+      name: "Daffodils Pilot",
+      location: "Field Test",
+      quote: "Real-world pilot demonstration showing the effectiveness of our filtration system.",
       rating: 5,
-      videoThumb: "/woman-testimonial-thumbnail.png",
+      videoThumb: "/daffodils-testimonial-thumbnail.png",
+      videoSrc: "/daffodils-testimonial.mov",
     },
     {
-      name: "James K.",
-      location: "Ann Arbor, MI",
-      quote: "Installation was straightforward, and the technical documentation is impressive.",
+      name: "Kerry - Daffodils",
+      location: "Live Water Testing",
+      quote: "Live feedback and testimonial from on-site water testing with our filtration technology.",
       rating: 5,
-      videoThumb: "/man-testimonial-thumbnail.png",
-    },
-    {
-      name: "Maria L.",
-      location: "Denver, CO",
-      quote: "As a chemist, I appreciate the transparent lab data and ion-exchange approach.",
-      rating: 5,
-      videoThumb: "/woman-scientist-testimonial-video.jpg",
-    },
-    {
-      name: "David R.",
-      location: "Boston, MA",
-      quote: "Great flow rate and the cartridge replacement indicator is very helpful.",
-      rating: 5,
-      videoThumb: "/man-testimonial-video-happy-customer.jpg",
+      videoThumb: "/daffodils-kerry-testimonial-thumbnail.png",
+      videoSrc: "/daffodils-kerry-testimonial.mp4",
     },
   ]
 
