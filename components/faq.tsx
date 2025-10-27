@@ -41,7 +41,7 @@ export function FAQ() {
     {
       question: "What warranty does Lucent come with?",
       answer:
-        "Lucent includes a 1-year limited warranty covering manufacturing defects in materials and workmanship. The warranty covers the housing, fittings, and electronic components but does not cover normal filter cartridge replacement. We also offer a 30-day satisfaction guarantee for testing the system in your home.",
+        "Lucent includes a 1-year limited warranty covering manufacturing defects in materials and workmanship. The warranty covers the stainless steel body, fittings, and electronic components but does not cover normal filter cartridge replacement. We also offer a 30-day satisfaction guarantee for testing the system in your home.",
     },
     {
       question: "Is Lucent certified by NSF or other third parties?",

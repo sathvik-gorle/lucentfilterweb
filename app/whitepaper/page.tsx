@@ -76,7 +76,7 @@ export default function WhitepaperPage() {
                   <div className="space-y-6 text-base leading-[2] text-foreground/85">
                     <p>
                       Lucent addresses the critical need for affordable, comprehensive water treatment in rural communities worldwide. 
-                      By combining regenerable ion-exchange resin with UV-C disinfection in a modular 3D-printed housing, Lucent removes 
+                      By combining regenerable ion-exchange resin with UV-C disinfection in a durable stainless steel body, Lucent removes 
                       both chemical contaminants (nitrates, PFAS) and microbial pathogens—filling a crucial gap in current water treatment 
                       solutions.
                     </p>
@@ -254,7 +254,7 @@ export default function WhitepaperPage() {
                 <h3>3.1 Design Overview</h3>
                 <p>
                   Lucent is a multi-stage water filtration system that combines a <strong>rechargeable ion-exchange resin cartridge</strong> 
-                  with <strong>UV disinfection</strong> in a robust, 3D-printed housing. Each component addresses a specific category of 
+                  with <strong>UV disinfection</strong> in a durable stainless steel body (outsourced). Each component addresses a specific category of 
                   contaminants, and together they deliver comprehensive treatment:
                 </p>
 
@@ -271,8 +271,8 @@ export default function WhitepaperPage() {
                   </div>
                   <div className="bg-primary/5 border border-primary/20 p-6 rounded-lg">
                     <Beaker className="w-10 h-10 text-primary mb-3" />
-                    <p className="font-bold text-lg mb-2">3D-Printed Housing</p>
-                    <p className="text-sm">Modular, customizable, locally manufacturable</p>
+                    <p className="font-bold text-lg mb-2">Stainless Steel Body</p>
+                    <p className="text-sm">Durable, corrosion-resistant, outsourced manufacturing</p>
                   </div>
                 </div>
 
@@ -415,26 +415,25 @@ export default function WhitepaperPage() {
                   and dose uniformity. Lucent uses a <strong>closed cylindrical reactor configuration</strong>, with a low-pressure mercury 
                   UV lamp encased in a quartz sleeve located centrally along the axis of the cylinder. Water enters at one end and flows 
                   through the annular space between the quartz sleeve (housing the lamp) and the reflective outer wall of the chamber. The 
-                  internal surface of the 3D-printed reactor is coated or lined with a UV-reflective material (such as a thin aluminum or 
-                  Teflon lining) to enhance the irradiation of the water from all sides.
+                  internal surface of the stainless steel reactor chamber provides natural UV reflection to enhance the irradiation of the water from all sides.
                 </p>
 
                 <p>
                   Computational fluid dynamics (CFD) analysis of the reactor indicated that a laminar flow profile at the design flow rate 
                   could lead to lower UV dose at the outer edges if the water near the wall flows faster than water near the lamp. To 
-                  counteract this, the design incorporates <strong>helical baffles</strong> (integrated into the printed housing) that impart 
+                  counteract this, the design incorporates <strong>helical baffles</strong> (integrated into the stainless steel body) that impart 
                   a mild secondary flow (swirl) and promote radial mixing. This effectively increases the uniformity of UV exposure by 
                   continually moving water from near the wall toward the center and vice versa.
                 </p>
 
-                <h3>3.4 Material Selection and Mechanical Properties of the 3D-Printed Housing</h3>
+                <h3>3.4 Material Selection and Mechanical Properties of the Stainless Steel Body</h3>
 
-                <h4>Polymer Selection for Water Treatment</h4>
+                <h4>Stainless Steel for Water Treatment</h4>
                 <p>
-                  A distinguishing feature of Lucent is its 3D-printed modular housing, which allows local manufacturing and customization. 
-                  The choice of polymer for printing is crucial to ensure mechanical strength, chemical safety, and durability under continuous 
-                  water exposure. After evaluating common 3D-printable plastics, <strong>PETG (Polyethylene Terephthalate Glycol-modified)</strong> 
-                  was selected for the housing and module components.
+                  A distinguishing feature of Lucent is its durable stainless steel body, which is outsourced from specialized manufacturers. 
+                  Stainless steel provides superior mechanical strength, chemical safety, and durability under continuous water exposure. 
+                  The <strong>food-grade stainless steel construction</strong> ensures corrosion resistance and longevity, making it ideal for 
+                  long-term water filtration applications.
                 </p>
 
                 <div className="not-prose bg-accent/5 p-6 rounded-lg my-8">
@@ -463,7 +462,7 @@ export default function WhitepaperPage() {
 
                 <h4>Mechanical Strength and Structural Design</h4>
                 <p>
-                  The housing modules were designed to withstand typical water system pressures. In a rural well context, pressures can vary; 
+                  The stainless steel body was designed to withstand typical water system pressures. In a rural well context, pressures can vary; 
                   if used with a hand pump or gravity feed, pressure might be only a few PSI, but if connected after a pressure tank or 
                   community pump, it could see up to 2–3 bar (30–45 psi). The structural design was analyzed using thin-wall pressure vessel 
                   theory and finite element simulation for the printed geometry.
@@ -769,7 +768,7 @@ export default function WhitepaperPage() {
                 <p>
                   A challenge with open-source hardware is ensuring that independently made units still meet the performance specs. To 
                   address this, we include simple test protocols and jigs that makers can use. For example, a pressure test jig to 
-                  pressurize the printed housing and check for leaks (using a bike tire pump and gauge) is described. Another is an optical 
+                  pressurize the stainless steel body and check for leaks (using a bike tire pump and gauge) is described. Another is an optical 
                   test for the UV sensor and lamp (using a UV-sensitive card or a photodiode meter to verify output roughly). By providing 
                   these QA steps in the documentation, even small workshops can implement a rudimentary quality assurance process.
                 </p>

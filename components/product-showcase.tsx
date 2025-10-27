@@ -11,14 +11,9 @@ export function ProductShowcase() {
 
   const productImages = [
     {
-      src: "/product-photos/IMG_8941.jpg",
-      title: "Complete Housing",
-      description: "3D-printed modular housing showing integrated cartridge design"
-    },
-    {
-      src: "/product-photos/IMG_8944.jpg",
-      title: "Vertical Assembly",
-      description: "Standing filter design showing connection points and structure"
+      src: "/product-photos/untitled-design-5.png",
+      title: "Lucent Filter System",
+      description: "Professional product render of the Lucent water filtration system"
     },
     {
       src: "/product-photos/IMG_8949.jpg",

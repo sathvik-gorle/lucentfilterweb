@@ -172,9 +172,9 @@ export function TechnicalDeepDive() {
                           </ul>
                         </div>
                         <div>
-                          <h4 className="font-semibold mb-2">Housing Materials</h4>
+                          <h4 className="font-semibold mb-2">Body Materials</h4>
                           <ul className="space-y-2 text-muted-foreground text-sm">
-                            <li>• Body: Food-grade polypropylene</li>
+                            <li>• Body: Food-grade stainless steel (outsourced)</li>
                             <li>• Seals: EPDM rubber (NSF-certified)</li>
                             <li>• Fittings: Brass with nickel plating</li>
                             <li>• BPA-free construction</li>

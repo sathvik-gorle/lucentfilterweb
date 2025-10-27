@@ -65,7 +65,7 @@ export function Hero() {
           {/* Product image with transparent background effect */}
           <div className="relative w-full h-full flex items-center justify-center">
             <img
-              src="/product-photos/IMG_8941.jpg"
+              src="/product-photos/untitled-design-5.png"
               alt="Lucent Water Filter - Click to see gallery"
               className="relative w-[90%] h-[90%] object-contain rounded-xl transition-all duration-500 group-hover:scale-105"
               style={{
@@ -132,7 +132,7 @@ export function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-br from-accent/40 via-primary/30 to-accent/40 rounded-full blur-[80px] animate-pulse" />
             <img
-              src="/product-photos/IMG_8941.jpg"
+              src="/product-photos/untitled-design-5.png"
               alt="Lucent Water Filter"
               className="relative w-full h-full object-contain rounded-xl"
               style={{

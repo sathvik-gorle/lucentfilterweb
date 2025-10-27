@@ -14,14 +14,14 @@ export function LucentSolutionSection() {
           <SectionHeader
             badge="Multi-Stage Filtration"
             title="The Lucent Solution"
-            description="Science-backed multi-stage filtration combining regenerable ion-exchange resin, UV-C disinfection, and 3D-printed modular housing—engineered for comprehensive well water treatment."
+            description="Science-backed multi-stage filtration combining regenerable ion-exchange resin, UV-C disinfection, and durable stainless steel body—engineered for comprehensive well water treatment."
           />
 
           <Tabs defaultValue="ion-exchange" className="w-full">
             <TabsList className="grid w-full grid-cols-3 max-w-3xl mx-auto h-14 md:h-16 p-1.5">
               <TabsTrigger value="ion-exchange" className="text-sm md:text-base font-semibold">Ion-Exchange</TabsTrigger>
               <TabsTrigger value="uv" className="text-sm md:text-base font-semibold">UV-C</TabsTrigger>
-              <TabsTrigger value="3d-printing" className="text-sm md:text-base font-semibold">3D Housing</TabsTrigger>
+              <TabsTrigger value="3d-printing" className="text-sm md:text-base font-semibold">Steel Body</TabsTrigger>
             </TabsList>
 
             <TabsContent value="ion-exchange" className="mt-8">
@@ -187,7 +187,7 @@ export function LucentSolutionSection() {
                       fact: "Bill of materials around $40 per unit, drastically lower than typical RO systems",
                     },
                   ]}
-                  lucentApproach="Custom-designed 3D-printed cartridge and housing made from food-grade plastics. Modular design means parts like resin cartridge and UV lamp can be replaced without replacing the whole unit."
+                  lucentApproach="Durable stainless steel body (outsourced) with modular cartridge design. Parts like resin cartridge and UV lamp can be replaced without replacing the whole unit."
                   proofSources={[
                     { text: "3D printing enables customized filtration systems" },
                     { text: "Digital files allow local manufacturing worldwide" },
@@ -198,7 +198,7 @@ export function LucentSolutionSection() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Box className="w-5 h-5 text-accent" />
-                      3D-Printed Modular Housing
+                      Stainless Steel Body
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-6">
