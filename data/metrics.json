@@ -1,32 +1,15 @@
 {
   "global": {
-    "householdsServed": 112,
-    "litersFiltered": 733650,
-    "avgNitrateReductionPct": 85,
+    "householdsServed": 32,
+    "litersFiltered": 207900,
+    "avgNitrateReductionPct": 90,
     "avgPfasReductionPct": 97,
     "uvDoseMjCm2": 40,
-    "uptimePct": 96,
+    "uptimePct": 97,
     "lastUpdated": "2025-10-21",
     "link": null
   },
   "sites": [
-    {
-      "id": "forafrika-africa",
-      "label": "Clean Water and Sanitation Africa Cameroon",
-      "householdsServed": 80,
-      "litersFiltered": 525600,
-      "nitrateInMgL": null,
-      "nitrateOutMgL": null,
-      "avgNitrateReductionPct": 90,
-      "pfosInPpt": null,
-      "pfosOutPpt": null,
-      "pfoaInPpt": null,
-      "pfoaOutPpt": null,
-      "avgPfasReductionPct": 97,
-      "uvDoseMjCm2": 40,
-      "uptimePct": 96,
-      "link": "https://www.cameroonheroes.gaicam.ngo/member/clean-water-and-sanitation-africa-cwasaf/"
-    },
     {
       "id": "daffodils-kochi",
       "label": "Daffodils Ladies Hostel, Kochi",

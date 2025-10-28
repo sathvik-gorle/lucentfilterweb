@@ -1,26 +1,6 @@
 {
   "pilots": [
     {
-      "id": "forafrika-africa",
-      "location": "Cameroon",
-      "partner": "Clean Water and Sanitation Africa Cameroon",
-      "coords": [5.9631, 10.1591],
-      "startDate": "2025-08-01",
-      "filtersInstalled": 4,
-      "peopleServed": 480,
-      "householdsEst": 80,
-      "dailyWaterLiters": 1440,
-      "annualWaterLiters": 525600,
-      "nitrateReductionPct": 90,
-      "pfasRemovalRange": "90–99",
-      "uvMicrobeInactivation": "99.99%",
-      "uptimePct": 96,
-      "notes": "Clean Water and Sanitation Africa Cameroon - promoting proper hygiene and sanitation. Lucent deployed 4 filters at community water points.",
-      "shortBlurb": "CWASAF is a non-profit organization promoting proper hygiene, sanitation, and environmental protection in Cameroon. Lucent installed 4 filters across community water points to provide reliable daily access to safe drinking water.",
-      "website": "https://www.cameroonheroes.gaicam.ngo/member/clean-water-and-sanitation-africa-cwasaf/",
-      "images": ["/placeholder.jpg"]
-    },
-    {
       "id": "daffodils-kochi",
       "location": "Kochi, India",
       "partner": "Daffodils Ladies Hostel",
@@ -42,11 +22,11 @@
     }
   ],
   "globalStats": {
-    "totalFilters": 8,
-    "totalPeopleServed": 670,
-    "totalHouseholdsServed": 112,
-    "totalDailyWaterLiters": 2010,
-    "totalAnnualWaterLiters": 733650,
-    "regions": ["Cameroon", "India"]
+    "totalFilters": 4,
+    "totalPeopleServed": 190,
+    "totalHouseholdsServed": 32,
+    "totalDailyWaterLiters": 570,
+    "totalAnnualWaterLiters": 207900,
+    "regions": ["India"]
   }
 }

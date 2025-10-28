@@ -98,30 +98,6 @@ export function PilotMap() {
 
   const pilots = [
     {
-      id: "forafrika-africa",
-      location: "Clean Water and Sanitation Africa Cameroon",
-      country: "🇨🇲 Cameroon",
-      coordinates: "5.963°N, 10.159°E",
-      partner: "Clean Water and Sanitation Africa Cameroon",
-      peopleServed: 480,
-      householdsEst: 80,
-      dailyWaterLiters: 1440,
-      annualWaterLiters: 525600,
-      filtersInstalled: 4,
-      status: "Active",
-      description: "CWASAF is a non-profit organization promoting proper hygiene, sanitation, and environmental protection in Cameroon. Lucent installed 4 filters across community water points to provide reliable daily access to safe drinking water for 480 people.",
-      image: "/placeholder.jpg",
-      highlights: [
-        "4 filters deployed",
-        "~90% nitrate reduction",
-        "90–99% PFAS removal",
-        "99.99% microbe inactivation",
-        "96% uptime"
-      ],
-      website: "https://www.cameroonheroes.gaicam.ngo/member/clean-water-and-sanitation-africa-cwasaf/",
-      labelType: "people"
-    },
-    {
       id: "daffodils-kochi",
       location: "Daffodils Ladies Hostel",
       country: "🇮🇳 Kochi, India",
@@ -170,7 +146,7 @@ export function PilotMap() {
             Global Deployments
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Lucent has deployed <strong className="text-foreground">8 water filters</strong> across Cameroon and India through partnerships with Clean Water and Sanitation Africa Cameroon and Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">734,000 liters</strong> of clean water annually to <strong className="text-foreground">670 people</strong>.
+            Lucent has deployed <strong className="text-foreground">4 water filters</strong> in India through partnership with Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">208,000 liters</strong> of clean water annually to <strong className="text-foreground">190 residents</strong>.
           </p>
           <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4">
             * Drinking water only: 3L/person/day × 365 days (WHO standard). Total water needs: 7.5-15L/day per person.
@@ -180,9 +156,8 @@ export function PilotMap() {
           </p>
           <p className="text-xs text-muted-foreground/70 max-w-2xl mx-auto mt-3 space-y-1">
             <span className="block font-semibold">How we calculated this:</span>
-            <span className="block">• CWASAF Cameroon: 480 people × 3L/day × 365 = 525,600 L/year</span>
             <span className="block">• Daffodils: 190 residents × 3L/day × 365 = 207,900 L/year</span>
-            <span className="block">• Total: 733,500 L/year drinking water capacity</span>
+            <span className="block">• Total: 207,900 L/year drinking water capacity</span>
           </p>
         </motion.div>
 
@@ -207,10 +182,10 @@ export function PilotMap() {
 
             <div className="mt-8 text-center space-y-2">
               <p className="text-lg text-muted-foreground">
-                <strong className="text-foreground">8 Lucent filters deployed</strong> • Serving 670 people across Cameroon & India
+                <strong className="text-foreground">4 Lucent filters deployed</strong> • Serving 190 residents in India
               </p>
               <p className="text-xs text-muted-foreground/70">
-                Total annual capacity: ~734K L/year (drinking water)
+                Total annual capacity: ~208K L/year (drinking water)
               </p>
             </div>
           </Card>
@@ -267,7 +242,7 @@ export function PilotMap() {
                         </span>
                       </div>
                       <p className="text-2xl font-bold">
-                        {pilot.labelType === "residents" ? pilot.residentsServed : pilot.peopleServed}
+                        {pilot.residentsServed}
                       </p>
                     </div>
                     <div className="space-y-1">

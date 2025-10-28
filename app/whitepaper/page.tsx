@@ -640,16 +640,12 @@ export default function WhitepaperPage() {
                   millions of rural families in South Asia, Africa, and elsewhere face similar water challenges.
                 </p>
 
-                {/* <h3>5.4 Current Field Deployments</h3>
+                <h3>5.4 Current Field Deployments</h3>
                 <p>
-                  Lucent has successfully deployed <strong>8 water filters</strong> across Cameroon and India through partnerships with:
+                  Lucent has successfully deployed <strong>4 water filters</strong> in India through partnership with:
                 </p>
 
                 <ul>
-                  <li>
-                    <strong><a href="https://www.cameroonheroes.gaicam.ngo/member/clean-water-and-sanitation-africa-cwasaf/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Clean Water and Sanitation Africa Cameroon (CWASAF)</a>:</strong> Non-profit organization promoting proper hygiene, sanitation, and environmental protection in Cameroon. 4 filters deployed 
-                    serving 480 people with 525,600 liters/year capacity (drinking water only, 3L/person/day).
-                  </li>
                   <li>
                     <strong>Daffodils Ladies Hostel (Kochi, India):</strong> Women's residential hostel near Infopark, Kakkanad. 4 filters 
                     deployed serving 190 residents with 207,900 liters/year capacity (drinking water only, 3L/person/day).
@@ -657,24 +653,24 @@ export default function WhitepaperPage() {
                 </ul>
 
                 <div className="not-prose bg-gradient-to-r from-primary/10 to-accent/10 border-2 border-primary/20 p-8 rounded-lg my-10">
-                  <p className="text-xl font-bold text-primary mb-4">📊 Global Impact Metrics</p>
+                  <p className="text-xl font-bold text-primary mb-4">📊 Impact Metrics</p>
                   <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div>
-                      <p className="text-4xl font-bold text-primary mb-2">670</p>
-                      <p className="text-sm text-muted-foreground">People Served</p>
+                      <p className="text-4xl font-bold text-primary mb-2">190</p>
+                      <p className="text-sm text-muted-foreground">Residents Served</p>
                     </div>
                     <div>
-                      <p className="text-4xl font-bold text-accent mb-2">~734K</p>
+                      <p className="text-4xl font-bold text-accent mb-2">~208K</p>
                       <p className="text-sm text-muted-foreground">Liters/Year Capacity</p>
                       <p className="text-xs text-muted-foreground/70">(drinking water, 3L/day)</p>
                     </div>
                     <div>
-                      <p className="text-4xl font-bold text-primary mb-2">112</p>
+                      <p className="text-4xl font-bold text-primary mb-2">32</p>
                       <p className="text-sm text-muted-foreground">Households Served</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mt-6 text-center">Updated October 2025</p>
-                </div> */}
+                </div>
 
                 {/* Section 6: Standards */}
                 <h2>6. Framework for Certification and Standards Compliance</h2>

@@ -16,8 +16,8 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Lucent Water Filter | PFAS & Ion-Exchange Filtration | Advanced Water Treatment",
-  description: "Advanced ion-exchange resin technology for PFAS removal. Lab-tested water filtration system combining regenerable resin, UV-C disinfection, and durable stainless steel construction.",
+  title: "Lucent Water Filter | PFAS & Ion-Exchange Filtration | Daffodils Ladies Hostel Partnership",
+  description: "Advanced ion-exchange resin technology for PFAS removal. Lab-tested water filtration system. Now serving 190 residents in India through partnership with Daffodils Ladies Hostel, Kochi.",
   generator: "v0.app",
 }
 
