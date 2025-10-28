@@ -640,7 +640,7 @@ export default function WhitepaperPage() {
                   millions of rural families in South Asia, Africa, and elsewhere face similar water challenges.
                 </p>
 
-                <h3>5.4 Current Field Deployments</h3>
+                {/* <h3>5.4 Current Field Deployments</h3>
                 <p>
                   Lucent has successfully deployed <strong>8 water filters</strong> across Cameroon and India through partnerships with:
                 </p>
@@ -674,7 +674,7 @@ export default function WhitepaperPage() {
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mt-6 text-center">Updated October 2025</p>
-                </div>
+                </div> */}
 
                 {/* Section 6: Standards */}
                 <h2>6. Framework for Certification and Standards Compliance</h2>

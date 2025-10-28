@@ -15,13 +15,13 @@ export default function Home() {
       <Navigation />
       <Hero />
       <DemoVideo />
-      <section className="py-12 md:py-14 bg-muted/10">
+      {/* <section className="py-12 md:py-14 bg-muted/10">
         <div className="container mx-auto px-4">
           <HeroStats />
         </div>
-      </section>
+      </section> */}
       <ProductShowcase />
-      <PilotMap />
+      {/* <PilotMap /> */}
       <LucentSolutionSection />
       <ComparisonTable />
       <FAQ />
