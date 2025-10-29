@@ -1,7 +1,7 @@
 {
   "global": {
     "householdsServed": 32,
-    "litersFiltered": 207900,
+    "litersFiltered": 300000,
     "avgNitrateReductionPct": 90,
     "avgPfasReductionPct": 97,
     "uvDoseMjCm2": 40,
@@ -14,7 +14,7 @@
       "id": "daffodils-kochi",
       "label": "Daffodils Ladies Hostel, Kochi",
       "householdsServed": 32,
-      "litersFiltered": 207900,
+      "litersFiltered": 300000,
       "nitrateInMgL": null,
       "nitrateOutMgL": null,
       "avgNitrateReductionPct": 90,
@@ -26,6 +26,23 @@
       "uvDoseMjCm2": 40,
       "uptimePct": 97,
       "link": "https://www.justdial.com/Ernakulam/Daffodils-Ladies-Hostel-Nr-Motus-Burrows-Apartment-Rajagiri-Valley/0484PX484-X484-190123122328-S2A2_BZDET"
+    },
+    {
+      "id": "africa-safe-water-kenya",
+      "label": "Africa Safe Water Foundation, Kenya",
+      "householdsServed": 0,
+      "litersFiltered": 400000,
+      "nitrateInMgL": null,
+      "nitrateOutMgL": null,
+      "avgNitrateReductionPct": 90,
+      "pfosInPpt": null,
+      "pfosOutPpt": null,
+      "pfoaInPpt": null,
+      "pfoaOutPpt": null,
+      "avgPfasReductionPct": 97,
+      "uvDoseMjCm2": 40,
+      "uptimePct": 0,
+      "link": null
     }
   ]
 }

@@ -648,7 +648,10 @@ export default function WhitepaperPage() {
                 <ul>
                   <li>
                     <strong>Daffodils Ladies Hostel (Kochi, India):</strong> Women's residential hostel near Infopark, Kakkanad. 4 filters 
-                    deployed serving 190 residents with 207,900 liters/year capacity (drinking water only, 3L/person/day).
+                    deployed serving 190 residents with 300,000 liters/year capacity (drinking water only, 3L/person/day).
+                  </li>
+                  <li>
+                    <strong>Africa Safe Water Foundation (Kenya):</strong> Rollout planned in Kenya through partnership with Africa Safe Water Foundation. Expected to provide 400,000 liters/year capacity.
                   </li>
                 </ul>
 
@@ -660,7 +663,7 @@ export default function WhitepaperPage() {
                       <p className="text-sm text-muted-foreground">Residents Served</p>
                     </div>
                     <div>
-                      <p className="text-4xl font-bold text-accent mb-2">~208K</p>
+                      <p className="text-4xl font-bold text-accent mb-2">~300K</p>
                       <p className="text-sm text-muted-foreground">Liters/Year Capacity</p>
                       <p className="text-xs text-muted-foreground/70">(drinking water, 3L/day)</p>
                     </div>
