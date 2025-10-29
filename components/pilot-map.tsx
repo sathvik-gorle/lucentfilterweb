@@ -104,8 +104,8 @@ export function PilotMap() {
       coordinates: "10.014°N, 76.363°E",
       partner: "Daffodils Ladies Hostel",
       residentsServed: 190,
-      dailyWaterLiters: 822,
-      annualWaterLiters: 300000,
+      dailyWaterLiters: 781,
+      annualWaterLiters: 285065,
       filtersInstalled: 4,
       status: "Active",
       description: "Women's residential hostel near Infopark, Kakkanad. Lucent installed 4 filters providing safe, on-site drinking water for 190 residents and staff.",
@@ -127,15 +127,15 @@ export function PilotMap() {
       coordinates: "1.292°S, 36.822°E",
       partner: "Africa Safe Water Foundation",
       residentsServed: 0,
-      dailyWaterLiters: 1096,
-      annualWaterLiters: 400000,
+      dailyWaterLiters: 1137,
+      annualWaterLiters: 415005,
       filtersInstalled: 0,
       status: "Planning",
-      description: "Rollout planned in Kenya through partnership with Africa Safe Water Foundation. Expected to provide 400,000 liters of clean water annually.",
+      description: "Rollout planned in Kenya through partnership with Africa Safe Water Foundation. Expected to provide ~415k liters of clean water annually (379 residents × 3L/day × 365).",
       image: "/placeholder.jpg",
       highlights: [
         "Planning rollout",
-        "400,000 L/year capacity",
+        "~415k L/year capacity (379 residents × 3L/day)",
         "90% nitrate reduction",
         "97% PFAS removal",
         "Partnership with Africa Safe Water Foundation"
@@ -169,7 +169,7 @@ export function PilotMap() {
             Global Deployments
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Lucent has deployed <strong className="text-foreground">4 water filters</strong> in India through partnership with Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">300,000 liters</strong> of clean water annually to <strong className="text-foreground">190 residents</strong>. Planning rollout in Kenya through partnership with Africa Safe Water Foundation for <strong className="text-foreground">400,000 liters</strong> annually.
+            Lucent has deployed <strong className="text-foreground">4 water filters</strong> in India through partnership with Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">285k liters</strong> of clean water annually to <strong className="text-foreground">190 residents</strong>. Planning rollout in Kenya through partnership with Africa Safe Water Foundation for <strong className="text-foreground">415k liters</strong> annually.
           </p>
           <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4">
             * Drinking water only: 3L/person/day × 365 days (WHO standard). Total water needs: 7.5-15L/day per person.
@@ -179,9 +179,9 @@ export function PilotMap() {
           </p>
           <p className="text-xs text-muted-foreground/70 max-w-2xl mx-auto mt-3 space-y-1">
             <span className="block font-semibold">How we calculated this:</span>
-            <span className="block">• Daffodils: 190 residents × 3L/day × 365 = 300,000 L/year (projected capacity)</span>
-            <span className="block">• Africa Safe Water Foundation (Kenya): 400,000 L/year (planning)</span>
-            <span className="block">• Total: 700,000 L/year drinking water capacity (300kL active + 400kL planned)</span>
+            <span className="block">• Daffodils: 190 residents × 4.11L/day × 365 = 285,065 L/year (~285kL)</span>
+            <span className="block">• Africa Safe Water Foundation (Kenya): 379 residents × 3L/day × 365 = 415,005 L/year (~415kL, planning)</span>
+            <span className="block">• Total: ~700k L/year drinking water capacity</span>
           </p>
         </motion.div>
 
@@ -209,7 +209,7 @@ export function PilotMap() {
                 <strong className="text-foreground">4 Lucent filters deployed</strong> • Serving 190 residents in India • Planning rollout in Kenya
               </p>
               <p className="text-xs text-muted-foreground/70">
-                Total annual capacity: ~700K L/year (300kL active + 400kL planned)
+                Total annual capacity: ~700k L/year (285kL active + 415kL planned)
               </p>
             </div>
           </Card>

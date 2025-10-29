@@ -9,8 +9,8 @@
       "filtersInstalled": 4,
       "residentsServed": 190,
       "householdsEst": 32,
-      "dailyWaterLiters": 822,
-      "annualWaterLiters": 300000,
+      "dailyWaterLiters": 781,
+      "annualWaterLiters": 285065,
       "nitrateReductionPct": 90,
       "pfasRemovalRange": "90–99",
       "uvMicrobeInactivation": "99.99%",
@@ -29,14 +29,14 @@
       "filtersInstalled": 0,
       "residentsServed": 0,
       "householdsEst": 0,
-      "dailyWaterLiters": 1096,
-      "annualWaterLiters": 400000,
+      "dailyWaterLiters": 1137,
+      "annualWaterLiters": 415005,
       "nitrateReductionPct": 90,
       "pfasRemovalRange": "90–99",
       "uvMicrobeInactivation": "99.99%",
       "uptimePct": 0,
       "status": "Planning",
-      "notes": "Rollout planned in Kenya through partnership with Africa Safe Water Foundation. Expected to provide 400,000 liters annually.",
+      "notes": "Rollout planned in Kenya through partnership with Africa Safe Water Foundation. Expected to provide ~415k liters annually (379 residents × 3L/day × 365 = 415,005 L/year).",
       "shortBlurb": "Rollout planned in Kenya. Partnership with Africa Safe Water Foundation to provide safe drinking water.",
       "website": null,
       "images": ["/placeholder.jpg"]
@@ -47,7 +47,7 @@
     "totalPeopleServed": 190,
     "totalHouseholdsServed": 32,
     "totalDailyWaterLiters": 570,
-    "totalAnnualWaterLiters": 300000,
+    "totalAnnualWaterLiters": 285065,
     "regions": ["India", "Kenya"]
   }
 }

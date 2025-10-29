@@ -1,7 +1,7 @@
 {
   "global": {
     "householdsServed": 32,
-    "litersFiltered": 300000,
+    "litersFiltered": 285065,
     "avgNitrateReductionPct": 90,
     "avgPfasReductionPct": 97,
     "uvDoseMjCm2": 40,
@@ -14,7 +14,7 @@
       "id": "daffodils-kochi",
       "label": "Daffodils Ladies Hostel, Kochi",
       "householdsServed": 32,
-      "litersFiltered": 300000,
+      "litersFiltered": 285065,
       "nitrateInMgL": null,
       "nitrateOutMgL": null,
       "avgNitrateReductionPct": 90,
@@ -31,7 +31,7 @@
       "id": "africa-safe-water-kenya",
       "label": "Africa Safe Water Foundation, Kenya",
       "householdsServed": 0,
-      "litersFiltered": 400000,
+      "litersFiltered": 415005,
       "nitrateInMgL": null,
       "nitrateOutMgL": null,
       "avgNitrateReductionPct": 90,
