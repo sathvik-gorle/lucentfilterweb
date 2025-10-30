@@ -36,6 +36,17 @@ export default function WhitepaperPage() {
                 NSF Standards Compliant
               </Badge>
             </div>
+            {/* Product Status Notice */}
+            <div className="mt-8 not-prose max-w-3xl mx-auto">
+              <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-400/60 text-amber-900 dark:text-amber-200 rounded-lg p-4 text-sm text-left">
+                <p className="font-semibold mb-1">Product status: UV stage pending</p>
+                <p className="leading-relaxed">
+                  Current builds and deployments are <strong>Stage 1 chemical filtration only</strong> (ion-exchange cartridge). The
+                  UV-C disinfection module is <strong>planned/pending</strong> and not installed in current units. Any UV performance
+                  discussed below refers to the <strong>planned Stage 2 module</strong> under development and intended certification.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -361,7 +372,12 @@ export default function WhitepaperPage() {
                   removal efficiency remained above 90%</strong> of initial performance even after five successive cycles.
                 </p>
 
-                <h3>3.3 UV Disinfection Reactor Design and Modeling</h3>
+                <h3>3.3 UV Disinfection Reactor Design and Modeling (planned Stage 2)</h3>
+
+                <p className="text-sm italic text-muted-foreground -mt-4 mb-6">
+                  Note: The UV-C disinfection module is planned and pending; current units ship without UV and operate as Stage 1 chemical
+                  filtration (ion-exchange) only. The following reflects the intended design and targets for the upcoming Stage 2 module.
+                </p>
 
                 <h4>UV-C Dose Requirements</h4>
                 <p>
@@ -536,9 +552,10 @@ export default function WhitepaperPage() {
                   capacity usage.
                 </p>
 
-                <h3>4.3 Microbial Disinfection Efficacy</h3>
+                <h3>4.3 Microbial Disinfection Efficacy (planned UV module)</h3>
                 <p>
-                  To validate the UV reactor performance, microbiological challenge tests were conducted:
+                  Planned validation scope for the UV reactor is outlined below. This reflects design targets for the pending UV module and
+                  is not representative of current Stage 1-only units:
                 </p>
 
                 <ul>
