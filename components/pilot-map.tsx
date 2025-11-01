@@ -103,16 +103,16 @@ export function PilotMap() {
       country: "🇮🇳 Kochi, India",
       coordinates: "10.014°N, 76.363°E",
       partner: "Daffodils Ladies Hostel",
-      residentsServed: 190,
-      dailyWaterLiters: 781,
-      annualWaterLiters: 285065,
+      residentsServed: 180,
+      dailyWaterLiters: 540,
+      annualWaterLiters: 197100,
       filtersInstalled: 4,
       status: "Active",
-      description: "Women's residential hostel near Infopark, Kakkanad. Lucent installed 4 filters providing safe, on-site drinking water for 190 residents and staff.",
+      description: "Women's residential hostel near Infopark, Kakkanad. Lucent installed 4 filters providing safe, on-site drinking water for 180 residents and staff.",
       image: "/placeholder.jpg",
       highlights: [
         "4 filters deployed",
-        "~190 residents served",
+        "~180 residents served",
         "90% nitrate reduction",
         "97% PFAS removal",
         "97% uptime"
@@ -126,16 +126,16 @@ export function PilotMap() {
       country: "🇰🇪 Kenya",
       coordinates: "1.292°S, 36.822°E",
       partner: "Africa Safe Water Foundation",
-      residentsServed: 0,
-      dailyWaterLiters: 1137,
-      annualWaterLiters: 415005,
-      filtersInstalled: 0,
-      status: "Planning",
-      description: "Rollout planned in Kenya through partnership with Africa Safe Water Foundation. Expected to provide ~415k liters of clean water annually (379 residents × 3L/day × 365).",
+      residentsServed: 470,
+      dailyWaterLiters: 1410,
+      annualWaterLiters: 514650,
+      filtersInstalled: 4,
+      status: "Shipped",
+      description: "4 filters shipped on October 30, 2024 through partnership with Africa Safe Water Foundation. Expected to serve 470 residents with ~515k liters/year capacity (470 residents × 3L/day × 365 = 514,650 L/year).",
       image: "/placeholder.jpg",
       highlights: [
-        "Planning rollout",
-        "~415k L/year capacity (379 residents × 3L/day)",
+        "4 filters shipped October 30, 2024",
+        "~515k L/year capacity (470 residents × 3L/day)",
         "90% nitrate reduction",
         "97% PFAS removal",
         "Partnership with Africa Safe Water Foundation"
@@ -169,7 +169,7 @@ export function PilotMap() {
             Global Deployments
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Lucent has deployed <strong className="text-foreground">4 water filters</strong> in India through partnership with Daffodils Ladies Hostel, providing approximately <strong className="text-foreground">285k liters</strong> of clean water annually to <strong className="text-foreground">190 residents</strong>. Planning rollout in Kenya through partnership with Africa Safe Water Foundation for <strong className="text-foreground">415k liters</strong> annually.
+            Lucent has deployed <strong className="text-foreground">8 water filters</strong> internationally—4 in India through partnership with Daffodils Ladies Hostel serving <strong className="text-foreground">180 residents</strong>, and 4 shipped to Kenya on October 30, 2024 through partnership with Africa Safe Water Foundation expected to serve <strong className="text-foreground">470 residents</strong>. Combined capacity: <strong className="text-foreground">~712k liters</strong> annually.
           </p>
           <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4">
             * Drinking water only: 3L/person/day × 365 days (WHO standard). Total water needs: 7.5-15L/day per person.
@@ -179,9 +179,9 @@ export function PilotMap() {
           </p>
           <p className="text-xs text-muted-foreground/70 max-w-2xl mx-auto mt-3 space-y-1">
             <span className="block font-semibold">How we calculated this:</span>
-            <span className="block">• Daffodils: 190 residents × 4.11L/day × 365 = 285,065 L/year (~285kL)</span>
-            <span className="block">• Africa Safe Water Foundation (Kenya): 379 residents × 3L/day × 365 = 415,005 L/year (~415kL, planning)</span>
-            <span className="block">• Total: ~700k L/year drinking water capacity</span>
+            <span className="block">• Daffodils: 180 residents × 3L/day × 365 = 197,100 L/year (~197kL)</span>
+            <span className="block">• Africa Safe Water Foundation (Kenya): 470 residents × 3L/day × 365 = 514,650 L/year (~515kL, shipped 10/30/24)</span>
+            <span className="block">• Total: ~712k L/year drinking water capacity across 650 residents</span>
           </p>
         </motion.div>
 
@@ -206,10 +206,10 @@ export function PilotMap() {
 
             <div className="mt-8 text-center space-y-2">
               <p className="text-lg text-muted-foreground">
-                <strong className="text-foreground">4 Lucent filters deployed</strong> • Serving 190 residents in India • Planning rollout in Kenya
+                <strong className="text-foreground">8 Lucent filters deployed</strong> • Serving 650 residents across India & Kenya
               </p>
               <p className="text-xs text-muted-foreground/70">
-                Total annual capacity: ~700k L/year (285kL active + 415kL planned)
+                Total annual capacity: ~712k L/year (197kL India + 515kL Kenya)
               </p>
             </div>
           </Card>
@@ -242,6 +242,8 @@ export function PilotMap() {
                     </div>
                     <Badge className={pilot.status === "Planning" 
                       ? "bg-yellow-500/10 text-yellow-700 border-yellow-500/30 font-semibold"
+                      : pilot.status === "Shipped"
+                      ? "bg-blue-500/10 text-blue-700 border-blue-500/30 font-semibold"
                       : "bg-green-500/10 text-green-700 border-green-500/30 font-semibold"}>
                       {pilot.status}
                     </Badge>
