@@ -668,7 +668,7 @@ export default function WhitepaperPage() {
                     deployed serving 190 residents with ~285k liters/year capacity (190 residents × 4.11L/day × 365 = 285,065 L/year).
                   </li>
                   <li>
-                    <strong>Africa Safe Water Foundation (Kenya):</strong> 4 filters shipped on October 30, 2024 through partnership with Africa Safe Water Foundation. Expected to serve 379 residents with ~415k liters/year capacity (379 residents × 3L/day × 365 = 415,005 L/year).
+                    <strong>Africa Safe Water Foundation (Kenya):</strong> 4 filters shipped on October 30, 2024 through partnership with Africa Safe Water Foundation. Expected to serve 460 residents with ~503k liters/year capacity (460 residents × 3L/day × 365 = 503,700 L/year).
                   </li>
                 </ul>
 
@@ -680,11 +680,11 @@ export default function WhitepaperPage() {
                       <p className="text-sm text-muted-foreground">Filters Deployed</p>
                     </div>
                     <div>
-                      <p className="text-4xl font-bold text-primary mb-2">569</p>
+                      <p className="text-4xl font-bold text-primary mb-2">650</p>
                       <p className="text-sm text-muted-foreground">Residents Served</p>
                     </div>
                     <div>
-                      <p className="text-4xl font-bold text-accent mb-2">~700K</p>
+                      <p className="text-4xl font-bold text-accent mb-2">~789K</p>
                       <p className="text-sm text-muted-foreground">Liters/Year Capacity</p>
                       <p className="text-xs text-muted-foreground/70">(drinking water)</p>
                     </div>
@@ -836,7 +836,7 @@ export default function WhitepaperPage() {
                       <ul className="space-y-2 text-sm">
                         <li>✓ <strong>$150 retail price</strong> (vs $500-$3,000 for RO)</li>
                         <li>✓ <strong>0.5 kWh/m³</strong> energy usage (vs 2-3 kWh/m³ for RO)</li>
-                        <li>✓ <strong>569 people served</strong> across 8 filters in India & Kenya</li>
+                        <li>✓ <strong>650 people served</strong> across 8 filters in India & Kenya</li>
                         <li>✓ <strong>Zero water waste</strong> (vs 20-50% for RO)</li>
                         <li>✓ <strong>Local manufacturing capable</strong> via 3D printing</li>
                       </ul>
