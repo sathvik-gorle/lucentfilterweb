@@ -668,7 +668,7 @@ export default function WhitepaperPage() {
                     deployed serving 180 residents with ~197k liters/year capacity (180 residents × 3L/day × 365 = 197,100 L/year).
                   </li>
                   <li>
-                    <strong>Africa Safe Water Foundation (Kenya):</strong> 4 filters shipped on October 30, 2024 through partnership with Africa Safe Water Foundation. Expected to serve 370 residents with ~405k liters/year capacity (370 residents × 3L/day × 365 = 405,150 L/year).
+                    <strong>Africa Safe Water Foundation (Kenya):</strong> 4 filters shipped on October 30, 2025 through partnership with Africa Safe Water Foundation. Expected to serve 370 residents with ~405k liters/year capacity (370 residents × 3L/day × 365 = 405,150 L/year).
                   </li>
                 </ul>
 

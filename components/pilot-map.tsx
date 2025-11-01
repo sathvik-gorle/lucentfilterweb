@@ -131,10 +131,10 @@ export function PilotMap() {
       annualWaterLiters: 405150,
       filtersInstalled: 4,
       status: "Shipped",
-      description: "4 filters shipped on October 30, 2024 through partnership with Africa Safe Water Foundation. Expected to serve 370 residents with ~405k liters/year capacity (370 residents × 3L/day × 365 = 405,150 L/year).",
+      description: "4 filters shipped on October 30, 2025 through partnership with Africa Safe Water Foundation. Expected to serve 370 residents with ~405k liters/year capacity (370 residents × 3L/day × 365 = 405,150 L/year).",
       image: "/placeholder.jpg",
       highlights: [
-        "4 filters shipped October 30, 2024",
+        "4 filters shipped October 30, 2025",
         "~405k L/year capacity (370 residents × 3L/day)",
         "90% nitrate reduction",
         "97% PFAS removal",
@@ -169,7 +169,7 @@ export function PilotMap() {
             Global Deployments
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Lucent has deployed <strong className="text-foreground">8 water filters</strong> internationally—4 in India through partnership with Daffodils Ladies Hostel serving <strong className="text-foreground">180 residents</strong>, and 4 shipped to Kenya on October 30, 2024 through partnership with Africa Safe Water Foundation expected to serve <strong className="text-foreground">370 residents</strong>. Combined capacity: <strong className="text-foreground">~602k liters</strong> annually.
+            Lucent has deployed <strong className="text-foreground">8 water filters</strong> internationally—4 in India through partnership with Daffodils Ladies Hostel serving <strong className="text-foreground">180 residents</strong>, and 4 shipped to Kenya on October 30, 2025 through partnership with Africa Safe Water Foundation expected to serve <strong className="text-foreground">370 residents</strong>. Combined capacity: <strong className="text-foreground">~602k liters</strong> annually.
           </p>
           <p className="text-sm text-muted-foreground/80 max-w-2xl mx-auto mt-4">
             * Drinking water only: 3L/person/day × 365 days (WHO standard). Total water needs: 7.5-15L/day per person.
@@ -180,7 +180,7 @@ export function PilotMap() {
           <p className="text-xs text-muted-foreground/70 max-w-2xl mx-auto mt-3 space-y-1">
             <span className="block font-semibold">How we calculated this:</span>
             <span className="block">• Daffodils: 180 residents × 3L/day × 365 = 197,100 L/year (~197kL)</span>
-            <span className="block">• Africa Safe Water Foundation (Kenya): 370 residents × 3L/day × 365 = 405,150 L/year (~405kL, shipped 10/30/24)</span>
+            <span className="block">• Africa Safe Water Foundation (Kenya): 370 residents × 3L/day × 365 = 405,150 L/year (~405kL, shipped 10/30/25)</span>
             <span className="block">• Total: ~602k L/year drinking water capacity across 550 residents</span>
           </p>
         </motion.div>
