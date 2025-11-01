@@ -665,10 +665,10 @@ export default function WhitepaperPage() {
                 <ul>
                   <li>
                     <strong>Daffodils Ladies Hostel (Kochi, India):</strong> Women's residential hostel near Infopark, Kakkanad. 4 filters 
-                    deployed serving 271 residents with ~295k liters/year capacity (271 residents × 3L/day × 365 = 296,895 L/year).
+                    deployed serving 180 residents with ~197k liters/year capacity (180 residents × 3L/day × 365 = 197,100 L/year).
                   </li>
                   <li>
-                    <strong>Africa Safe Water Foundation (Kenya):</strong> 4 filters shipped on October 30, 2024 through partnership with Africa Safe Water Foundation. Expected to serve 379 residents with ~415k liters/year capacity (379 residents × 3L/day × 365 = 415,005 L/year).
+                    <strong>Africa Safe Water Foundation (Kenya):</strong> 4 filters shipped on October 30, 2024 through partnership with Africa Safe Water Foundation. Expected to serve 470 residents with ~515k liters/year capacity (470 residents × 3L/day × 365 = 514,650 L/year).
                   </li>
                 </ul>
 
