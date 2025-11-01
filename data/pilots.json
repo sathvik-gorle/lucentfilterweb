@@ -21,10 +21,10 @@
       "images": ["/placeholder.jpg"]
     },
     {
-      "id": "africa-safe-water-kenya",
-      "location": "Kenya",
+      "id": "africa-safe-water-nigeria",
+      "location": "Nigeria",
       "partner": "Africa Safe Water Foundation",
-      "coords": [-1.2921, 36.8219],
+      "coords": [6.5244, 3.3792],
       "startDate": "2025-10-30",
       "filtersInstalled": 4,
       "residentsServed": 370,
@@ -48,6 +48,6 @@
     "totalHouseholdsServed": 92,
     "totalDailyWaterLiters": 1650,
     "totalAnnualWaterLiters": 602250,
-    "regions": ["India", "Kenya"]
+    "regions": ["India", "Nigeria"]
   }
 }

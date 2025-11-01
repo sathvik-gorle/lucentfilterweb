@@ -668,7 +668,7 @@ export default function WhitepaperPage() {
                     deployed serving 180 residents with ~197k liters/year capacity (180 residents × 3L/day × 365 = 197,100 L/year).
                   </li>
                   <li>
-                    <strong>Africa Safe Water Foundation (Kenya):</strong> 4 filters shipped on October 30, 2025 through partnership with Africa Safe Water Foundation. Expected to serve 370 residents with ~405k liters/year capacity (370 residents × 3L/day × 365 = 405,150 L/year).
+                    <strong>Africa Safe Water Foundation (Nigeria):</strong> 4 filters shipped on October 30, 2025 through partnership with Africa Safe Water Foundation. Expected to serve 370 residents with ~405k liters/year capacity (370 residents × 3L/day × 365 = 405,150 L/year).
                   </li>
                 </ul>
 
@@ -691,7 +691,7 @@ export default function WhitepaperPage() {
                     <div>
                       <p className="text-4xl font-bold text-primary mb-2">2</p>
                       <p className="text-sm text-muted-foreground">Countries</p>
-                      <p className="text-xs text-muted-foreground/70">India & Kenya</p>
+                      <p className="text-xs text-muted-foreground/70">India & Nigeria</p>
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mt-6 text-center">Updated October 2025</p>
@@ -836,7 +836,7 @@ export default function WhitepaperPage() {
                       <ul className="space-y-2 text-sm">
                         <li>✓ <strong>$150 retail price</strong> (vs $500-$3,000 for RO)</li>
                         <li>✓ <strong>0.5 kWh/m³</strong> energy usage (vs 2-3 kWh/m³ for RO)</li>
-                        <li>✓ <strong>550 people served</strong> across 8 filters in India & Kenya</li>
+                        <li>✓ <strong>550 people served</strong> across 8 filters in India & Nigeria</li>
                         <li>✓ <strong>Zero water waste</strong> (vs 20-50% for RO)</li>
                         <li>✓ <strong>Local manufacturing capable</strong> via 3D printing</li>
                       </ul>
